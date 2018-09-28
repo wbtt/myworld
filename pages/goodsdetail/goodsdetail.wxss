@@ -1,0 +1,184 @@
+/* pages/goodsdetail/goodsdetail.wxss */
+
+.container {
+  padding-top: 1px;
+  margin-bottom: 50px;
+}
+
+.goodsthumb {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.goodsthumb image {
+  width: 100%;
+  max-height: 100%;
+}
+
+.basicinfo {
+  width: 94%;
+  padding: 10px 0;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 16px;
+  line-height: 21px;
+  padding: 10rpx 0;
+}
+
+.price {
+  font-size: 23px;
+  line-height: 23px;
+
+  color: #cf1e25;
+  padding: 10rpx 0;
+}
+
+.desc {
+  font-size: 13px;
+  color: #81838e;
+  margin: 11px 10px 0 0;
+  line-height: 17px;
+  text-align: justify;
+}
+
+.addcartnum {
+  width: 94%;
+  padding: 10rpx 0;
+  height: 36px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.partnotemsg {
+  width: 20%;
+  font-size: 16px;
+}
+
+.quantity-wrapper {
+  width: 80%;
+}
+
+.stepper {
+  width: 100px;
+  height: 26px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.stepper text {
+  width: 29px;
+  line-height: 26px;
+  text-align: center;
+  float: left;
+}
+
+.stepper input {
+  width: 40px;
+  height: 26px;
+  min-height: 0;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.stepper .normal {
+  color: black;
+}
+
+.stepper .disabled {
+  color: #ccc;
+}
+
+.detail {
+  width: 94%;
+  padding: 10rpx 0;
+  overflow: hidden;
+}
+
+.detail text {
+  display: block;
+  width: 100%;
+  height: 24px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.detail image {
+  width: 100%;
+  max-height: 100%;
+}
+
+.cartfixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  font-size: 15px;
+  background-color: #fff;
+  font-family: "微软雅黑";
+  z-index:10;
+}
+
+.cartlist {
+  width: 20%;
+  text-align: center;
+}
+
+.cartico {
+  width: 100%;
+  padding-top: 3px;
+  position: relative;
+}
+
+.carnum {
+  position: absolute;
+  right: 12px;
+  top: 1px;
+  min-width: 15px;
+  min-height: 15px;
+  line-height: 15px;
+  text-align: center;
+  background: red;
+  padding: 1px;
+  color: #fff;
+  font-size: 8px;
+  border-radius: 50%;
+}
+
+.cartico image {
+  width: 22px;
+  height: 22px;
+}
+
+.carttitle {
+  font-size: 12px;
+  color: #81838e;
+}
+
+.addcart {
+  width: 40%;
+  text-align: center;
+  line-height: 45px;
+  background-color: #ffb03f;
+  color: #fff;
+}
+
+.directorder {
+  width: 40%;
+  text-align: center;
+  line-height: 45px;
+  background-color: #cf1e25;
+  color: #fff;
+}

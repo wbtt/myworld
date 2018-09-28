@@ -1,0 +1,13 @@
+<!--pages/faq/faq.wxml-->
+<view class="container">
+<view class="user pos-relative">
+    <!-- <button class="_content" open-type="contact">
+      <image mode="widthFix" src="../../assets/img/huihua.png"></image>
+    </button> -->
+  </view>
+  <view class="content">
+    <view class="describe" style="word-break:break-all;">
+      {{obj.content}}
+    </view>
+  </view>
+    </view>

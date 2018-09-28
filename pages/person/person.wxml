@@ -1,0 +1,27 @@
+<!--pages/person/person.wxml-->
+<view class="container">
+  <view class="action-item" bindtap="portrait">
+    <image mode="widthFix" class="icon" src="../../assets/img/camera.png"></image>修改头像
+    <view class="action">
+      <image mode="widthFix" mode="scaleToFill" src="{{userInfo.portrait}}"></image><text style="color:#B2A2A0;">></text> </view>
+  </view>
+  <view class="action-item" bindtap="name">
+    <image mode="widthFix" class="icon" src="../../assets/img/name.png"></image>昵称
+    <view class="action">
+      <text>{{userInfo.nickname}}</text> <text style="color:#B2A2A0;">></text></view>
+  </view>
+  <view class="action-item" bindtap="mail">
+    <image mode="widthFix" class="icon" src="../../assets/img/email.png"></image>邮箱
+    <view class="action">
+      <text>{{userInfo.email}}</text> <text style="color:#B2A2A0;">></text></view>
+  </view>
+  <view class="action-item" bindtap="signature">
+    <image mode="widthFix" class="icon" src="../../assets/img/qm.png"></image>签名
+    <view class="action">
+      <text>{{userInfo.autograph}}</text> <text style="color:#B2A2A0;">></text></view>
+  </view>
+  <view class="action-item">
+    <image mode="widthFix" class="icon" src="../../assets/img/phone.png"></image>手机号码
+    <view class="action">{{userInfo.tel}}</view>
+  </view>
+</view>

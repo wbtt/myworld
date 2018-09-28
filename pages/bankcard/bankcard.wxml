@@ -1,0 +1,86 @@
+<view class="container">
+  <!--<view class="message">
+    <view class="name">银行名称</view>
+    <view class="number">银行卡号</view>
+  </view>-->
+
+  <view wx:for="{{array}}" class="card  gsyh" wx:if="{{item.bank_name =='工商银行'}}">
+    <view class="name">{{item.bank_name}}</view>
+    <view class="cxk">储蓄卡</view>
+    <view class="number">
+      <image mode="widthFix" src="../../assets/img/xh.png"></image>{{item.card_number}}</view>
+  </view>
+  <view wx:for="{{array}}" class="card  jsyh" wx:if="{{item.bank_name =='建设银行'}}">
+    <view class="name">{{item.bank_name}}</view>
+    <view class="cxk">储蓄卡</view>
+    <view class="number">
+      <image mode="widthFix" src="../../assets/img/xh.png"></image>{{item.card_number}}</view>
+  </view>
+  <view wx:for="{{array}}" class="card  nyyh" wx:if="{{item.bank_name =='农业银行'}}">
+    <view class="name">{{item.bank_name}}</view>
+    <view class="cxk">储蓄卡</view>
+    <view class="number">
+      <image mode="widthFix" src="../../assets/img/xh.png"></image>{{item.card_number}}</view>
+  </view>
+  <view wx:for="{{array}}" class="card  zgyh" wx:if="{{item.bank_name =='中国银行'}}">
+    <view class="name">{{item.bank_name}}</view>
+    <view class="cxk">储蓄卡</view>
+    <view class="number">
+      <image mode="widthFix" src="../../assets/img/xh.png"></image>{{item.card_number}}</view>
+  </view>
+  <view wx:for="{{array}}" class="card  zxyh" wx:if="{{item.bank_name =='中信银行'}}">
+    <view class="name">{{item.bank_name}}</view>
+    <view class="cxk">储蓄卡</view>
+    <view class="number">
+      <image mode="widthFix" src="../../assets/img/xh.png"></image>{{item.card_number}}</view>
+  </view>
+  <view wx:for="{{array}}" class="card  gdyh" wx:if="{{item.bank_name =='光大银行'}}">
+    <view class="name">{{item.bank_name}}</view>
+    <view class="cxk">储蓄卡</view>
+    <view class="number">
+      <image mode="widthFix" src="../../assets/img/xh.png"></image>{{item.card_number}}</view>
+  </view>
+  <view wx:for="{{array}}" class="card  jtyh" wx:if="{{item.bank_name =='交通银行'}}">
+    <view class="name">{{item.bank_name}}</view>
+    <view class="cxk">储蓄卡</view>
+    <view class="number">
+      <image mode="widthFix" src="../../assets/img/xh.png"></image>{{item.card_number}}</view>
+  </view>
+  <view wx:for="{{array}}" class="card  msyh" wx:if="{{item.bank_name =='民生银行'}}">
+    <view class="name">{{item.bank_name}}</view>
+    <view class="cxk">储蓄卡</view>
+    <view class="number">
+      <image mode="widthFix" src="../../assets/img/xh.png"></image>{{item.card_number}}</view>
+  </view>
+  <view wx:for="{{array}}" class="card  pfyh" wx:if="{{item.bank_name =='上海浦东发展银行'}}">
+    <view class="name">{{item.bank_name}}</view>
+    <view class="cxk">储蓄卡</view>
+    <view class="number">
+      <image mode="widthFix" src="../../assets/img/xh.png"></image>{{item.card_number}}</view>
+  </view>
+  <view wx:for="{{array}}" class="card  zsyh" wx:if="{{item.bank_name =='招商银行'}}">
+    <view class="name">{{item.bank_name}}</view>
+    <view class="cxk">储蓄卡</view>
+    <view class="number">
+      <image mode="widthFix" src="../../assets/img/xh.png"></image>{{item.card_number}}</view>
+  </view>
+  <view wx:for="{{array}}" class="card  payh" wx:if="{{item.bank_name =='平安银行'}}">
+    <view class="name">{{item.bank_name}}</view>
+    <view class="cxk">储蓄卡</view>
+    <view class="number">
+      <image mode="widthFix" src="../../assets/img/xh.png"></image>{{item.card_number}}</view>
+  </view>
+  <view wx:for="{{array}}" class="card  xyyh" wx:if="{{item.bank_name =='兴业银行'}}">
+    <view class="name">{{item.bank_name}}</view>
+    <view class="cxk">储蓄卡</view>
+    <view class="number">
+      <image mode="widthFix" src="../../assets/img/xh.png"></image>{{item.card_number}}</view>
+  </view>
+  <view wx:for="{{array}}" class="card  yzyh" wx:if="{{item.bank_name =='邮政储蓄银行'}}">
+    <view class="name">{{item.bank_name}}</view>
+    <view class="cxk">储蓄卡</view>
+    <view class="number">
+      <image mode="widthFix" src="../../assets/img/xh.png"></image>{{item.card_number}}</view>
+  </view>
+  <button bindtap="join" data-id="{{num}}"> 添加银行卡 </button>
+</view>

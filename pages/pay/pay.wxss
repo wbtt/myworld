@@ -1,0 +1,83 @@
+/* pages/pay/pay.wxss */
+
+page {
+  font-family: "微软雅黑";
+}
+
+form {
+  width: 94%;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.amount {
+  border-bottom: 2px solid #ebebeb;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+.amount1 {
+  padding: 5px 20px;
+  border-bottom: 5px solid #ebefed;
+  font-size: 14px;
+}
+
+input {
+  border-bottom: 1px solid #000;
+  display: inline-block;
+  width: 145px;
+  vertical-align: middle;
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+button {
+  background-color: #cf1e25;
+  color: #fff;
+  margin: 20px 15px;
+  line-height: 2;
+}
+
+.button-hover {
+  background-color: #cf1e25;
+  color: #fff;
+}
+
+image {
+  width: 91px;
+  height: 32px;
+  vertical-align: middle;
+}
+
+label {
+  line-height: 45px;
+}
+
+radio-group {
+  width: 160px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.amount1 .recharge {
+  display: inline-block;
+}
+
+radio {
+  margin: 0 15px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+}
+
+.pay text {
+  vertical-align: middle;
+}
+
+.rech {
+  font-size: 15px;
+}

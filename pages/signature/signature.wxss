@@ -1,0 +1,25 @@
+/* pages/signature/signature.wxss */
+page{
+  max-height: 100%;
+  background: rgb(235, 239, 237);
+}
+.container {
+  padding: 30rpx 20rpx;
+  font-size: 14px;
+  text-align: left;
+}
+.name{
+  background-color: #fff;
+  padding: 10px;
+  width: 93%;
+  border-radius: 5px;
+}
+.myform{
+  width: 100%;
+}
+button {
+  width: 95%;
+  line-height: 2.2;
+  font-size: 18px;
+  margin-top: 15px;
+}

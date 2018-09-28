@@ -1,0 +1,19 @@
+/* pages/mycart/mycart.wxss */
+
+.container {
+  padding-top: 0rpx;
+  font-size: 14px;
+  background: rgb(235, 239, 237);
+}
+
+.action-item {
+  background: #fff;
+  width: 94%;
+  padding: 0 3%;
+  line-height: 49px;
+  border-bottom: 2px solid #ccc;
+}
+
+.action {
+  float: right;
+}

@@ -1,0 +1,68 @@
+/* pages/join/join.wxss */
+.container {
+  padding: 5rpx 20rpx;
+}
+input{
+  width: 190px;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  vertical-align: middle;
+}
+/*.securityCode{
+   width: 100%;
+  position: relative;
+  border-bottom: 0;
+}*/
+.code{
+  position: absolute;
+  top:6px;
+  right: 10px;
+  color: #CCCCCC;
+  border: 1px solid #CCCCCC;
+  border-radius:10%; 
+  padding: 2px 20px;
+}
+button{
+  background-color: #cf1e25;
+  color: #fff;
+  width: 95%;
+  line-height: 2.2;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.icon {
+  width: 32px;
+  height: 32px;
+  margin-right:5px;
+  vertical-align: middle;
+}
+.row {
+  clear: left;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: -1px 0px 5px #d2d2d2;
+  margin-bottom:10px;
+  border-radius: 5px; 
+  text-align: left;
+}
+.myform{
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+.left{
+  display: inline-block;
+  width: 30%;
+  border-right: 1px solid #d2d2d2;
+  padding: 12px 0 12px 10px;
+  color: #808080;
+  font-size: 16px;
+}
+input{
+  font-size: 14px;
+}
+picker{
+  display:inline-block;
+width:100%;
+
+}

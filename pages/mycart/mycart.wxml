@@ -1,0 +1,4 @@
+<view class="container">
+  <view class="action-item">历史订单<view class="action" bindtap="history">></view></view>
+  <view class="action-item" style="border:0;">收货地址管理<view class="action" bindtap="editShipAddress">></view></view>
+</view>

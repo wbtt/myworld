@@ -1,0 +1,46 @@
+<!--pages/myorder/myorder.wxml-->
+<view class="container">
+<view class="header">
+    <!-- <button class="content" open-type="contact">
+      <image mode="widthFix" src="../../assets/img/huihua.png"></image>
+    </button> -->
+  </view>
+  <view class="cart" hidden="{{orders}}">
+    <image mode="widthFix" src="../../assets/img/cart_logo.png" />
+    <view style="color:#4d4d4d;">我的订单还是空的</view>
+    <view style="color:#4d4d4d;font-size:13px;margin-top:10px;">“快去选购你喜欢的商品吧~”</view>
+    <button class="goin" bindtap="goin">进入商城</button>
+  </view>
+  <view class="cartList" hidden="{{!orders}}">
+  <block wx:for="{{orders}}">
+    <view class="orderno">订单号：<text selectable="true">{{item.orderno}}</text></view>
+    <view class="goods-info" wx:if="{{item.img.length <= 1}}">
+      <view class="goods-img">
+        <image mode="widthFix" src="{{imgurl}}{{item.img[0]}}"></image>
+      </view>
+      <view class="name-price-num">
+        <view class="name">{{item.goodsname}}</view>
+        <!--<view class="price">¥{{item.goodsprice}}</view>
+        <view class="num">数量：{{item.number}}</view>-->
+      </view>
+    </view>
+    <view class="goods-info" wx:else>
+      <view class="goods-img" wx:for="{{item.img}}" wx:for-item="items">
+        <image mode="widthFix" src="{{imgurl}}{{items}}"></image>
+      </view>
+    </view>
+    <view class="total-section">
+      <view class="section">
+        <view class="num">共{{item.number}}件商品</view>
+        <view class="total">合计：¥{{item.buyprice}}</view>
+        <view class="action" wx:if="{{item.staus == 1}}">
+          <button type="warn" size="mini" data-oid="{{item.oid}}" bindtap="pay">去支付</button>
+        </view>
+        <view class="action" wx:else>
+          <button type="default" size="mini" disabled="true">已支付</button>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+</view>

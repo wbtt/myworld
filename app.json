@@ -1,0 +1,94 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/buy/buy",
+    "pages/paystock/paystock",
+    "pages/buystock/buystock",
+    "pages/stock/stock",
+    "pages/authen/authen",
+    "pages/setting/setting",
+    "pages/ceshi/ceshi",
+    "pages/orderdetail/orderdetail",
+    "pages/news/news",
+    "pages/mystock/mystock",
+    "pages/ticket/ticket",
+    "pages/join/join",
+    "pages/faq/faq",
+    "pages/trading/trading",
+    "pages/user/user",
+    "pages/market/market",
+    "pages/assets/assets",
+    "pages/withdrawal/withdrawal",
+    "pages/myorder/myorder",
+    "pages/recharge/recharge",
+    "pages/forget/forget",
+    "pages/order/order",
+    "pages/mail/mail",
+    "pages/login/login",
+    "pages/sell/sell",
+    "pages/reg/reg",
+    "pages/portrait/portrait",
+    "pages/bankcard/bankcard",
+    "pages/code/code",
+    "pages/findor/findor",
+    "pages/shipaddress/shipaddress",
+    "pages/cart/cart",
+    "pages/goodsdetail/goodsdetail",
+    "pages/goodslist/goodslist",
+    "pages/history/history",
+    "pages/press/press",
+    "pages/recdown/recdown",
+    "pages/markdetail/markdetail",
+    "pages/transaction/transaction",
+    "pages/pay/pay",
+    "pages/name/name",
+    "pages/person/person",
+    "pages/service/service",
+    "pages/law/law",
+    "pages/signature/signature",
+    "pages/collection/collection",
+    "pages/change/change",
+    "pages/mycart/mycart",
+    "pages/rectop/rectop",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#000",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "assets/img/home.png",
+        "selectedIconPath": "assets/img/home_active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "iconPath": "assets/img/news.png",
+        "selectedIconPath": "assets/img/news_active.png",
+        "text": "新闻"
+      },
+      {
+        "pagePath": "pages/market/market",
+        "iconPath": "assets/img/market.jpg",
+        "selectedIconPath": "assets/img/market_active.jpg",
+        "text": "商城"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "assets/img/user.png",
+        "selectedIconPath": "assets/img/user_active.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+<!--pages/setting/setting.wxml-->
+<view class="container">
+  <view class="user pos-relative">
+    <view class="user-portrait fl" wx:if="{{userInfo.portrait != ''}}">
+      <image class="portrait" src="{{userInfo.portrait}}"></image>
+    </view>
+    <view class="user-portrait fl" wx:else>
+      <image class="portrait" src="../../assets/img/portrait.png"></image>
+    </view>
+    <view class="user-info fl">
+      <text class="nickname">设置</text>
+    </view>
+  </view>
+  <view class="action-item" bindtap="portrait">
+    修改头像
+    <view class="action">
+      <text style="color:#B2A2A0;">></text>
+    </view>
+  </view>
+  <view class="action-item" bindtap="name">
+    昵称
+    <view class="action">
+      <text style="color:#B2A2A0;">></text>
+    </view>
+  </view>
+  <view class="action-item" bindtap="mail">
+    邮箱
+    <view class="action">
+      <text style="color:#B2A2A0;">></text>
+    </view>
+  </view>
+  <!--<view class="action-item" bindtap="signature">
+  签名
+    <view class="action">
+  <text style="color:#B2A2A0;">></text></view>
+  </view>-->
+  <view class="action-item">
+    手机号码
+    <view class="action">{{userInfo.tel}}</view>
+  </view>
+  <view class="action-item" bindtap="change">
+    修改密码
+    <view class="action">></view>
+  </view>
+  <!--<view class="action-item"><image class="icon" src="../../assets/img/yuyan.png"></image>切换语言<view class="action" bindtap="">></view></view>-->
+  <view class="action-item" bindtap="authen">
+    身份验证
+    <view class="action">></view>
+  </view>
+  <!-- <button class="content action-item" open-type="contact">我的客服
+    <view class="action">></view>
+  </button> -->
+
+  <view class="action-item" bindtap="service" style="margin-top:10px;">
+    服务中心
+    <view class="action">></view>
+  </view>
+
+  <!--<view class="action-item" bindtap="">
+    <image class="icon" src="../../assets/img/shoushi.png"></image>手势密码
+    <view class="action">
+      <switch checked bindchange="switch1Change" />
+    </view>
+  </view>-->
+  <!--<view class="action-item" bindtap="clear">
+    <image class="icon" src="../../assets/img/qingchu.png"></image>清除缓存
+    <view class="action">
+      <text>8.9M</text> ></view>
+  </view>-->
+</view>
+<button bindtap="logout" class="out"> 退出登录 </button>

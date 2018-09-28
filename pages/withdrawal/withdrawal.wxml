@@ -1,0 +1,39 @@
+<!--pages/withdrawal/withdrawal.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit" bindreset="formReset" class="myform">
+    <view class="dj">
+      <view style="border-bottom:1rpx solid #d2d2d2;padding:20rpx;">
+        <text style="width:50%;color:#808080;">冻结金币</text>
+        <text style="width:50%;color:#000000;">{{frozen}}币</text>
+      </view>
+      <view style="padding:20rpx;color:#808080;">
+        <text style="width:50%;">可提现金额</text>
+        <text style="width:50%;color:#000000;">¥ {{assets}}</text>
+      </view>
+    </view>
+    <view class="dj" style="margin-top:20rpx;">
+      <view class="amount">
+        <text class="recharge">提现金额：</text>
+        <text>¥</text>
+        <input type="digit" name="withdrawal" placeholder="请输入提现金额" placeholder-class="with" value="{{withdrawal}}" />
+        <input type="text" name="ass" style="display:none;"  value="{{assets}}" />
+        <view class="all " bindtap="all">全部提现</view>
+      </view>
+      <view class="row amount1">
+        <view class="section">
+        <text class="recharge">请选择银行卡：</text>
+          <picker bindchange="bindPickerChange" name="picker" value="{{index}}" range="{{array}}">
+            <view class="picker">
+              {{array[index]}}
+              <input type="text" name="card" style="display:none;" value="{{array[index]}}" />
+              <input type="text" name="num" style="display:none;" value="{{brray[index]}}" />
+              <!--<view class="all" style="margin-left:70rpx;">选择其他</view>-->
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class="title">提现申请将在1-2个工作日内到账</view>
+    <button loading="{{loading}}" plain="{{plain}}" formType="submit"> 立即提现 </button>
+  </form>
+</view>

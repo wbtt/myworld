@@ -1,0 +1,94 @@
+/* pages/authen/authen.wxss */
+/* pages/reg/reg.wxss */
+
+.container {
+  padding-top: 0rpx;
+}
+
+.input-group {
+  width: 90%;
+  font-size: 12px;
+  color: #000;
+  position: relative;
+}
+
+.input-row {
+  clear: left;
+  height: 43px;
+  flex-direction: row;
+  box-shadow: -1px 0px 5px #d2d2d2;
+  margin-bottom:10px;
+  border-radius: 5px;
+}
+
+.input-row label, .input-row input {
+  height: 43px;
+  line-height: 43px;
+  color: #808080;
+}
+
+.input-row label {
+  width: 25%;
+  /*background: red;*/
+  text-align: center;
+  font-size: 16px;
+ border-right: 1px solid #d2d2d2; 
+}
+
+.input-row input {
+  font-size: 18px;
+  width: 68%;
+  /*background: green;*/
+}
+
+.place {
+  color: #808080;
+  font-size: 12px;
+}
+
+
+.button-row {
+  margin-top: 10px;
+}
+
+.button-row button {
+  height: 33px;
+  line-height: 33px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border: 0;
+  background: #cf1e25;
+  color: #fff;
+}
+
+.button-row button:first-child {
+  background: #cf1e25;
+}
+.positive{
+  margin-top: 10px;
+  text-align: center;
+  box-shadow: -1px 0px 5px #d2d2d2;
+    border:1px solid #EAEAEA;
+    border-radius: 5px;
+}
+image{
+  width: 100%;
+  height: 170px;
+}
+.button-row .positive_up{
+  top:50%;
+  right: 20%;
+  display: inline-block;
+  margin:0 5px;
+  margin-bottom: 0;
+  color:#808080;
+  font-size: 16px;
+}
+button::after{
+  border: 0;
+}
+.title{
+   top:60%;
+  right: 35%;
+  color: #999999;
+}

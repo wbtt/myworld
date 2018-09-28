@@ -1,0 +1,33 @@
+/* pages/shipaddress/shipaddress.wxss */
+.container {
+  padding-top: 0rpx;
+  font-size: 14px;
+  background: rgb(235, 239, 237);
+}
+.myform {
+  background: #fff;
+  width: 94%;
+  padding: 10px 3%;
+}
+.section {
+  overflow: hidden;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+  line-height:2;
+
+}
+.section__title {
+  float: left;
+  width: 24%;
+}
+.section input {
+  width: 74%;
+}
+.btn-area {
+  margin-top: 30px;
+}
+button{
+  background: #cf1e25;
+  color:#fff;
+}
+

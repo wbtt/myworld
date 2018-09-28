@@ -1,0 +1,60 @@
+/* pages/trading/trading.wxss */
+
+.prompt{
+  background-color: #cf1e25;
+  padding: 20px 30px;
+}
+.prompt text{
+  color: #fff;
+  font-size: 14px;
+}
+.rmb,
+.name{
+  margin-left:25px;
+  margin-right: 5px;
+}
+
+.amount1 .rmb,
+.amount1 .num{
+  color: #FF9966;
+  font-size: 16px;
+  font-weight: bold;
+}
+.yuan{
+  margin-left: 5px;
+}
+.amount{
+  padding: 10px 25px; 
+  border-bottom: 1px solid #EBEBEB;
+  font-size: 14px;
+}
+.amount1{
+  padding: 10px 25px; 
+  font-size: 14px;
+}
+.pay{
+  padding: 0 5px;
+    border-bottom: 5px solid #EBEBEB;
+}
+image{
+  width: 75px;
+  height:75px;
+  vertical-align: middle;
+  margin-right: 40px;
+}
+.icon {
+  width: 32px;
+  height: 32px;
+  margin-right:5px;
+}
+.pay text{
+  vertical-align: middle;
+}
+button{
+  background-color: #cf1e25;
+  color:#fff;
+  width: 90%;
+  line-height: 2;
+  margin-top: 10px;
+  font-size: 16px;
+}

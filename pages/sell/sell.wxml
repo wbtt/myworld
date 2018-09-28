@@ -1,0 +1,99 @@
+<!--pages/sell/sell.wxml-->
+<view class="container">
+  <view class="b1" hidden="{{flag1}}">
+    <view class="particulars">
+      <view class="header">
+        安培斯通投资协议
+        <icon class="fr" type="clear" size="20" bindtap="b1" />
+      </view>
+      <view class="minute">
+        <view class="classname"> 欢迎您访问安培斯通pro，感谢您与西安骄汐商务信息服务有限公司共同签署本《安培斯通pro用户协议》（下称“本协议”），并使用安培斯通pro系统平台服务。本协议中协议双方合称协议方，西安骄汐商务信息服务有限公司在协议中亦称为“安培斯通pro”。 </view>
+        <view class="classname"> 您在申请注册流程中点击同意本协议之前，应当认真阅读本协议。请您务必审慎阅读，充分理解各条款内容，特别是免除或者限制责任的条款、法律适用和争议解决条款。如您对协议有任何疑问，可向平台客服咨询。</view>
+        <view class="classname"> 本系统是实现安培斯通消费及消费返还的平台；本系统的规则设定遵循安培斯通商城系统的返还方案和规则。相关的服务内容和准则由系统平台的各项文档明确规定。本平台经营珠宝类目的商品，并提供商品返利服务，为每一位会员提供共赢利益服务。如果您在安培斯通指定途径购买的产品未符合您所见之说明，您可将该未经使用过的产品向商家协商做退换货处理，协商不成的，您有权通过其他法律途径处理。</view>
+        <view class="classname"> 鉴于安培斯通pro并非是关乎国计民生或者垄断的行业及企业，因此您对本使用协议不认同的，完全可以选择不加入和使用本程序。 </view>
+        <view class="classname"> 一、安培斯通pro服务：</view>
+        <view class="classname"> 1、服务定义：安培斯通pro是经济发展下的新型业态，目的在于打造新的产业增长点，为大众创业、万众创新创造条件，为产业智能化提供支撑，为经济发展增添动力，为广大会员提供更好的消费投资和创业服务平台。安培斯通pro系统是安培斯通的会员注册、管理、返利、创业的平台。</view>
+        <view class="classname"> 2、商城：安培斯通pro提供珠宝类优质商品的销售服务，您可以在安培斯通pro商城及其他指定渠道购买商品，以享受安培斯通pro提供的一系列服务。</view>
+        <view class="classname"> 3、商品分享券：安培斯通pro会员（以下简称会员）可以通过购买安培斯通品牌及其合作的组织所出售商品，给予五星好评生效后，即可获得商品分享券。商品分享券是会员通过参与安培斯通pro及其合作组织举办的各种销售活动及其设置的相应链接、页面才能获得的一种权利，可以用来兑换安培斯通pro提供的返现金额、各类商品和服务。分享券所代表的金额随安培斯通品牌发展及销售情况实时产生变动，以新闻资讯的形式发布。</view>
+        <view class="classname"> 4、分享：成为会员后，您将在账户中获得唯一的分享代码。通过购买商品成功获得一张商品分享券后，其他消费者通过您的分享代码完成购买，给予五星好评生效并成功领取分享券的同时，您亦可获得相应商品的商品分享券。</view>
+        <view class="classname"> 5、提现：商品分享券可随时卖出并提现。商品分享券在符合安培斯通pro及其合作组织举办的具体活动之规则的情况下，您可以向安培斯通pro申请卖出。卖出的相应金额，自动进入可提现金额账户，该账户内的金额可用来在安培斯通pro商城购买商品或申请转账提现。正常情况下，安培斯通pro收到提现申请后1-2个工作日内完成汇款工作（遇到节假日情况顺延）。安培斯通pro以银行卡转账的方式进行兑现（提现时用户须承担一定的综合服务费用）。 </view>
+        <view class="classname"> 6、消费全返：实际购买商品所领得的分享券卖出后，所得金额不足订单金额的部分会自动进入冻结金币账户，按照每日万分之五的比例进行返现，直至返现完毕。返现直接进入可提现金额账户，并可按照规则进行消费或提现。</view>
+        <view class="classname"> 7、安培斯通pro的分享券、可提现金额以及冻结金币，仅适用于安培斯通pro及其合作组织举办的各种活动，并不构成会员任何形式的资产。</view>
+        <view class="classname"> 8、会员应当获得的商品分享券由安培斯通pro根据相应商品销售规则计入会员所有的安培斯通pro账户中。商品分享券获得规则由各项具体活动详细规定，请您密切关注安培斯通pro各具体活动的页面。</view>
+        <view class="classname"> 9、会员除在安培斯通pro指定的频道或者平台上进行相关奖励的交易涉及到商品分享券、冻结金币账户与可提现金额账户资金的流转外，商品分享券、冻结金币账户与可提现金额账户资金不能以买卖、赠与等其他任何形式转让予他人。</view>
+        <view class="classname"> 10、通过安培斯通pro及其关联公司或合作组织提供的安培斯通pro服务和其它服务，会员可在业务规则允许范围内在安培斯通pro上查询交易信息和服务信息、达成交易意向并参加安培斯通pro组织的活动以及使用其它信息服务及技术服务。</view>
+        <view class="classname"> 11、您在安培斯通pro的交易过程中与其他会员发生交易纠纷时，一旦您或其它会员任一方或双方共同提交安培斯通pro要求调处，则安培斯通pro有权根据单方判断做出调处决定，您了解并同意接受安培斯通pro的判断和调处决定。该决定将对您的纠纷具有约束力。</view>
+        <view class="classname"> 12、您了解并同意，安培斯通pro有权应政府部门（包括司法及行政部门）的正当合法的要求，向其提供您在安培斯通pro填写的注册信息和交易纪录等必要信息。如您涉嫌侵犯他人的合法权益，则安培斯通pro亦有权在初步判断涉嫌侵权等违法行为存在的情况下，向权利人提供您必要的身份信息。除非法律法规或相关政府部门另有要求，安培斯通pro将在前述信息披露情况发生后及时向您发出书面通知。</view>
+        <view class="classname"> 二、责任范围和责任限制</view>
+        <view class="classname"> 1、安培斯通pro负责按"现状"和"可得到"的状态向您提供服务，且安培斯通pro仅对自身提供的服务承担责任。</view>
+        <view class="classname"> 2、安培斯通pro上的商品分享券的价格、数量等商品信息随时有可能发生变动。您知悉并理解由于网站上商品信息数量极其庞大，虽然安培斯通pro会尽合理的最大努力保证您所浏览的商品信息的准确性、迅捷性，但由于众所周知的互联网技术因素等客观原因，安培斯通pro显示的信息可能存在一定的滞后性和差错，由此给您带来的不便或产生相应问题，安培斯通pro不承担责任。 </view>
+        <view class="classname"> 3、除非法律法规明确要求，或出现以下情况，否则，安培斯通pro没有义务对所有用户的注册数据、商品（服务）信息、交易行为以及与交易有关的其它事项进行事先审查：</view>
+        <view class="classname"> a)安培斯通pro有合理的理由认为特定会员及具体交易事项可能存在重大违法或违约情形。</view>
+        <view class="classname"> b)安培斯通pro有合理的理由认为用户在安培斯通pro的行为涉嫌违法或不当。</view>
+        <view class="classname"> 4、您理解并同意，安培斯通pro及其关联公司并非司法机构，仅能以普通人的身份对证据进行鉴别，安培斯通pro及其关联公司对争议的调处完全是基于您的委托，安培斯通pro及其关联公司无法保证争议处理结果符合您的期望，也不对争议调处结论承担任何责任。如您因此遭受损失，您同意自行通过法律途径向受益人或者其他相关人员索偿。</view>
+        <view class="classname"> 5、您了解并同意，安培斯通pro不对下述任一情况而导致您的任何损害赔偿承担责任，包括但不限于利润、商誉、使用、数据等方面的损失或其它无形损失的损害赔偿 (无论安培斯通pro是否已被告知该等损害赔偿的可能性)：</view>
+        <view class="classname"> a)第三方未经批准的使用您的账户或更改您的数据。</view>
+        <view class="classname"> b)通过安培斯通pro服务获取任何商品、样品、数据、信息或进行交易等行为或替代行为产生的费用及损失，但因安培斯通pro提供的服务信息错误所导致的除外。</view>
+        <view class="classname"> c)您对安培斯通pro服务的误解。</view>
+        <view class="classname"> d)任何非因安培斯通pro的原因而引起的与安培斯通pro服务有关的其它损失。</view>
+        <view class="classname"> 6、因使用安培斯通pro服务而引起的任何损害或经济损失，安培斯通pro承担的全部责任均不超过您通过安培斯通pro所购买的或与该索赔有关的服务或商品的价格。本责任限制条款在会员资格被冻结、暂停或注销后仍继续有效。</view>
+        <view class="classname"> 7、不论在何种情况下，安培斯通pro均不对由于罢工、暴乱、起义、骚乱、火灾、洪水、风暴、爆炸、战争、政府行为、司法行政机关的命令，以及其它非因安培斯通pro的原因而造成的不能服务或延迟服务承担责任。安培斯通pro会尽合理努力处理善后事宜。</view>
+        <view class="classname"> 三、协议终止</view>
+        <view class="classname"> 1、您有权向安培斯通pro要求注销您的账户，经安培斯通pro审核同意的，安培斯通pro注销（永久冻结）您的账户，届时，您与安培斯通pro基于本协议的合同关系即终止。您的账户被注销（永久冻结）后，安培斯通pro没有义务为您保留或向您披露您账户中的任何信息，也没有义务向您或第三方转发任何您未曾阅读或发送过的信息。</view>
+        <view class="classname"> 您有权通过以下任一方式终止本协议：</view>
+        <view class="classname"> （1）在满足安培斯通pro公示的账户注销条件时您通过自助服务注销您的账户的；</view>
+        <view class="classname"> （2）变更事项生效前您停止使用并明示不愿接受变更事项的；</view>
+        <view class="classname"> （3）您明示不愿继续使用安培斯通pro平台服务，且符合安培斯通pro终止条件的。</view>
+        <view class="classname"> 2、您同意，您违反本协议约定，安培斯通pro有权依据本协议决定中止、终止向您提供部分或全部安培斯通pro平台服务，暂时冻结或永久冻结（注销）您的账户，且无须为此向您或任何第三方承担任何责任，但本协议或法律法规另有明确要求的除外。</view>
+        <view class="classname"> 3、出现以下情况时，安培斯通pro有权直接以注销账户的方式终止本协议：</view>
+        <view class="classname"> a)安培斯通pro终止向您提供服务后，您涉嫌再一次直接或间接或以他人名义注册为安培斯通pro用户的；</view>
+        <view class="classname"> b您提供的联系方式不存在或无法接收信息，且没有其他方式可以与您进行联系，或安培斯通pro以其它联系方式通知您更改联系方式，而您在安培斯通pro通知后七个工作日内仍未更改为有效的联系方式的；</view>
+        <view class="classname"> c)通过不正当的手段更改数据、信息等内容，破坏安培斯通pro正常运营和利益的；</view>
+        <view class="classname"> d)您注册信息中的主要内容不真实或不准确或不及时或不完整；</view>
+        <view class="classname"> e)本协议（含规则）变更时，您明示并通知安培斯通pro不愿接受新的服务协议的；</view>
+        <view class="classname"> f)其它安培斯通pro认为应当终止服务的情况。</view>
+        <view class="classname"> 3、您同意，您与安培斯通pro的合同关系终止后，安培斯通pro及其关联公司或者其合作组织仍享有下列权利：</view>
+        <view class="classname"> a)继续保存并使用您的注册、登记信息、数据及您使用安培斯通pro服务期间的所有交易数据。</view>
+        <view class="classname"> b)您在使用安培斯通pro服务期间存在违法行为或违反本协议和/或规则的行为的，安培斯通pro仍可依据本协议向您主张权利。</view>
+        <view class="classname"> 5、安培斯通pro中止或终止向您提供服务后，对于您在服务中止或终止之前的交易行为依下列原则处理，您应独力处理并完全承担进行以下处理所产生的任何争议、损失或增加的任何费用，并应确保安培斯通pro免于因此产生任何损失或承担任何费用：</view>
+        <view class="classname"> a)您在服务中止或终止之前已经上传至安培斯通pro的商品分享券尚未交易的，安培斯通pro有权在中止或终止服务的同时删除此商品分享券的相关信息；</view>
+        <view class="classname"> b)您在服务中止或终止之前已经使用商品分享券卖出的可提现金额、获得的冻结金币及商品消费返利，但合同尚未实际履行的，安培斯通pro有权删除该商品分享券兑换的可提现金额、获得的冻结金币及商品消费返利的相关信息；</view>
+        <view class="classname"> 四、法律适用、管辖与其他</view>
+        <view class="classname"> 1、本协议之效力、解释、变更、执行与争议解决均适用中华人民共和国法律，如无相关法律规定的，则应参照通用国际商业惯例和（或）行业惯例。</view>
+        <view class="classname"> 2、因本协议产生之争议，应依照中华人民共和国法律予以处理。双方对于争议协商不成的，应当提交西安骄汐商务信息服务有限公司企业所在地人民法院诉讼解决。</view>
+        <view class="classname"> 3、本协议未尽事宜，参照《注册使用条款》中的规定。</view>
+        <view class="classname"> 五、解释权</view>
+        <view class="classname"> 本协议最终解释权归西安骄汐商务信息服务有限公司所有。 </view>
+      </view>
+    </view>
+  </view>
+  <form bindsubmit="formSubmit" bindreset="formReset" class="myform" data-id="{{pid}}">
+    <view class="detail">
+      <view class="row">
+        <image class="icon" mode="widthFix" src="../../assets/img/tx.png"></image> 卖出单价：
+        <text>{{new}}元</text>
+      </view>
+      <view class="row">
+        <image class="icon" mode="widthFix" src="../../assets/img/gp.png"></image> 账户余额：
+        <text style="color:#FE9A68;">{{assets}}元</text>
+      </view>
+      <input name="numb" value="{{numb}}" style="display:none;" />
+      <text>持有股票数量 {{numb}}股</text>
+      <view class="row">
+        <image class="icon" mode="widthFix" src="../../assets/img/dq.png"></image> 卖出股数：
+        <input type="number" name="num" />股</view>
+      <!--<text>卖出金额：</text>
+      <view class="row">
+        <view class="much">
+          <text class="rmb">¥</text>2353.00元</view>
+      </view>-->
+      <view class="row" style="font-size:12px;padding-left:15px;">
+        <checkbox-group name="checkbox_group" bindchange="checkboxChange" >
+        <label class=" fl forgot-pwd">
+          <checkbox value="123" size="20" name="is_sel" /><text bindtap="a1"> 同意安培斯通使用协议</text></label>
+      </checkbox-group>
+      </view>
+    </view>
+    <button bindtap="trading" formType="submit">确认卖出 </button>
+  </form>
+</view>

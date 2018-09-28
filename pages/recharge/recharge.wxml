@@ -1,0 +1,21 @@
+<!--pages/recharge/recharge.wxml-->
+<view class="container">
+  <form class="input-group" bindsubmit="formSubmit">
+    <view class="amount">
+      <text class="recharge" style="padding-bottom:16px;">充值金额</text>
+      <text style="font-size:15px;margin-left:10px;">¥</text>
+      <input type="digit" name="withdrawal" placeholder="请输入充值金额" placeholder-class="rech" />
+    </view>
+    <view class="row amount1">
+      <text class="recharge" style="border:0;">支付方式</text>
+      <radio-group class="radio-group" style="border-left:1px solid #d2d2d2;">
+        <label class="radio" wx:for="{{items}}">
+        <image mode="widthFix" src="{{item.value}}"></image>
+          <radio value="{{item.name}}" checked="{{item.checked}}" />
+        </label>
+      </radio-group>
+    </view>
+    <view class="title">目前仅支持微信支付的方式充值</view>
+    <button loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" formType="submit" bindtap="rectop"> 立即充值 </button>
+  </form>
+</view>

@@ -1,0 +1,53 @@
+<!--pages/order/order.wxml-->
+<view class="container">
+  <view class="user-info">
+    <block wx:if="{{user == ''}}">
+      <view class="add-shipaddress">
+        <button bindtap="addShipAddress"> 设置收货地址 </button>
+      </view>
+    </block>
+    <block wx:if="{{user != ''}}">
+      <view class="show-address">
+        <view class="name-tel">{{user.consignee}} {{user.phone}}</view>
+        <view class="address">{{user.province}}{{user.city}}{{user.region}} {{user.block}}</view>
+        <view>{{user.aid}}</view>
+      </view>
+      <view class="edit">
+        <button type="warn" size="mini" bindtap="addShipAddress"> 编辑 </button>
+      </view>
+    </block>
+  </view>
+
+  <block wx:if="{{cart.length <= 0}}">
+    <view class="goods-info">
+      <view class="goods-img">
+        <image mode="widthFix" src="{{imgurl}}{{data.goodsthumb}}"></image>
+      </view>
+      <view class="name-price-num">
+        <view class="name">{{data.goodsname}}</view>
+        <view class="price">¥{{data.goodsprice}}</view>
+        <view class="num">数量：{{num}}</view>
+      </view>
+    </view>
+  </block>
+
+  <block wx:if="{{cart.length > 0}}" wx:for="{{cart}}">
+    <view class="goods-info">
+      <view class="goods-img">
+        <image mode="widthFix" src="{{imgurl}}{{item.goodsthumb}}"></image>
+      </view>
+      <view class="name-price-num">
+        <view class="name">{{item.goodsname}}</view>
+        <view class="price">¥{{item.goodsprice}}</view>
+        <view class="num">数量：{{item.count}}</view>
+      </view>
+    </view>
+  </block>
+
+</view>
+<view class="order-now-fixed">
+  <view class="real-payment">实付金额：
+    <text>¥{{total}}</text>
+  </view>
+  <button class="order-now" bindtap="saveOrder" disabled="{{disabled}}" loading="{{loading}}" data-id="{{uid}}">立即下单</button>
+</view>

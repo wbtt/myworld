@@ -1,0 +1,42 @@
+<!--pages/transaction/transaction.wxml-->
+<view class="container">
+  <view class="tran">
+      <!--<view class="time">
+        <view class="year"></view>
+        <view class="choose">选择月份></view>
+      </view> -->
+      <view class="detail" >
+        <view class="row"  wx:for="{{array}}">
+          <view class="rechange ">{{item.remarks}}</view>
+          <view class="money {{item.type=='1'? 'red' : 'green'}}">{{item.type=='1'? '+' : '-'}}{{item.money}}</view>
+          <view class="shijian">{{item.add_time}}</view>
+        </view>
+  </view>
+  <!--<view class="tran">
+      <view class="time">
+        <view class="year">2017年3月</view>
+      </view> 
+      <view class="detail">
+        <view class="row">
+          <view class="rechange ">充值</view>
+          <view class="money red">+1970.75</view>
+          <view class="shijian">4-11 13:00</view>
+        </view>
+        <view class="row">
+          <view class="rechange ">提现</view>
+          <view class="money green">+1970.75</view>
+          <view class="shijian">4-11 13:00</view>
+        </view>
+        <view class="row">
+          <view class="rechange ">投资</view>
+          <view class="money red">+1970.75</view>
+          <view class="shijian">4-11 13:00</view>
+        </view>
+        <view class="row">
+          <view class="rechange">购物</view>
+          <view class="money green">+1970.75</view>
+          <view class="shijian">4-11 13:00</view>
+        </view>
+      </view>-->
+  </view>
+ </view>

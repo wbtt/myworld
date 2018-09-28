@@ -1,0 +1,56 @@
+<!--要是够车内没有数据，就行显示没有数据-->
+<view class="container">
+  <view class="header">
+    <!-- <button class="content" open-type="contact">
+      <image mode="widthFix" src="../../assets/img/huihua.png"></image>
+    </button> -->
+  </view>
+  <view class="cart" hidden="{{iscart}}">
+    <image mode="widthFix" src="../../assets/img/cart_logo.png" />
+    <view style="color:#4d4d4d;">购物车还是空的</view>
+    <view style="color:#4d4d4d;font-size:13px;margin-top:10px;">“快去选购你喜欢的商品吧~”</view>
+    <button class="goin" bindtap="goin">进入商城</button>
+  </view>
+  <!--要是有数据，就显示数据-->
+  <view class="cartList" hidden="{{!iscart}}">
+    <!--header-->
+    <!--<view class="baoyou"></view>-->
+    <!--list item-->
+    <block wx:for="{{cart}}">
+      <view class="goods">
+        <!--左侧图片-->
+        <view>
+          <image mode="widthFix" src="{{imgurl}}{{item.goodsthumb}}" class="good-img" />
+        </view>
+        <!--右侧说明部分-->
+        <view class="good-cont">
+          <!--文字说明-->
+          <view class="goods-navigator">
+            <text class="good-name">{{item.goodsname}}</text>
+          </view>
+          <!--价钱和购物加减的父盒子-->
+          <view class="good-price">
+            <text class="price" style="margin-top:5px;">¥ {{item.goodsprice}}</text>
+            <view class="btn-box">
+              <view class="stepper">
+                <text class="normal" id="del{{index}}" bindtap="delCount">-</text>
+                <input type="number" bindchange="bindManual" value="{{item.count}}" />
+                <text class="normal" id="add{{index}}" bindtap="addCount">+</text>
+              </view>
+              <image id="img{{index}}" src="../../assets/img/qingchu.png" bindtap="delGoods" />
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+<!--footer-->
+<view class="total" hidden="{{!iscart}}">
+  <view class="total_text">合计：
+    <text>¥{{total}}</text>
+  </view>
+  <view class="total_btn">
+    <button class="total_js" bindtap="saveOrder">结算({{goodsCount}})</button>
+  </view>
+</view>

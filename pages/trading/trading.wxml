@@ -1,0 +1,21 @@
+<!--pages/trading/trading.wxml-->
+
+  <view class="prompt">
+    <image mode="widthFix" src="../../assets/img/ok.png"></image>
+    <text>恭喜您</text>
+      <text>卖出成功!</text>
+  </view>
+  <view class="pay">
+        <view class="amount">
+            <image mode="widthFix" class="icon" src="../../assets/img/zzc.png"></image>
+            <text class="recharge">产品名称：</text>
+            <text class="name">{{product_name}}</text>
+        </view>
+        <view class="amount1">
+            <image mode="widthFix" class="icon" src="../../assets/img/tx.png"></image>
+            <text class="recharge">交易金额：</text>
+            <text class="rmb">¥</text>
+            <text class="num">{{money}}</text>
+        </view>
+  </view>
+  <button bindtap="return">返回</button>

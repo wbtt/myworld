@@ -1,0 +1,30 @@
+<!-- scale.wxml -->
+<!--水平滚动-->
+<scroll-view scroll-x="true" scroll-y="true" style=" white-space: nowrap; display: flex" bindtouchstart="touchstartCallback" bindtouchmove="touchmoveCallback" bindtouchend="touchendCallback">
+  <!--  display: inline-block-->
+  <view style="background: red; width: 200px; height: 100px; display: inline-block"></view>
+  <view style="background: green; width: 200px; height: 100px; display: inline-block"></view>
+  <view style="background: blue; width: 200px; height: 100px; display: inline-block"></view>
+  <view style="background: yellow; width: 200px; height: 100px; display: inline-block"></view>
+  <image style="zoom:{{stv.scale}};" src="../../assets/img/tu1.png"></image>
+  <image style="zoom:{{stv.scale}};" src="../../assets/img/tu2.png"></image>
+</scroll-view>
+
+
+
+<!-- <view class="section">
+  <view class="section__title">movable-view区域小于movable-area</view>
+  <scroll-view class="img" bindtouchstart="touchstartCallback" bindtouchmove="touchmoveCallback" bindtouchend="touchendCallback" scroll-x="true">
+    <movable-area style="height: 200px;width: 200px;background: red;">
+      <movable-view style="zoom:{{stv.scale}};height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y}}" direction="all">
+      </movable-view>
+    </movable-area>
+    <movable-area style="height: 200px;width: 200px;background: red;">
+      <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y}}" direction="all">
+      </movable-view>
+    </movable-area>
+  </scroll-view>
+  <view class="btn-area">
+    <button size="mini" bindtap="tap">click me to move to (30px, 30px)</button>
+  </view>
+</view>  -->

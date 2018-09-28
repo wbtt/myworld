@@ -1,0 +1,94 @@
+<!--pages/assets/assets.wxml-->
+<!--<view class="prompt">
+  <text class="title">
+    您的总资产为：
+  </text>
+  <view class="num">
+    {{total}}
+  </view>
+</view>
+<view class="pay">
+  <view class="amount">
+    <image class="icon" src="../../assets/img/cz.png"></image>
+    <text class="recharge">冻结金币：</text>
+    <text class="rmb" style="margin-left:40px;"></text>
+    <text class="num">{{frozen}}</text>
+    <text class="yuan">币</text>
+  </view>
+  <view class="amount1">
+    <image class="icon" src="../../assets/img/tx.png"></image>
+    <text class="recharge">可提现金额：</text>
+    <text class="rmb">¥</text>
+    <text class="num">{{assets}}</text>
+    <text class="yuan">元</text>
+  </view>
+</view>
+   <button bindtap="return">去提现</button>-->
+<view class="container">
+  <view class="user pos-relative">
+    <view class="user-portrait fl" wx:if="{{userInfo.portrait != ''}}">
+      <image class="portrait" src="{{userInfo.portrait}}" bindtap="personal"></image>
+    </view>
+    <view class="user-portrait fl" wx:else>
+      <image class="portrait" src="../../assets/img/portrait.png" bindtap="personal"></image>
+    </view>
+    <view class="user-info fl">
+      <text class="nickname">{{userInfo.nickname}}</text>
+    </view>
+    <!-- <button class="content" open-type="contact">
+      <image mode="widthFix" src="../../assets/img/huihua.png"></image>
+    </button> -->
+    <view class="asset">
+      <view class=" fl" style="line-height:35px;">您的总资产为：{{all}}</view>
+      <view class="widthdrawal fr" bindtap="recharge">
+        充值
+      </view>
+      <view class="widthdrawal fr" bindtap="widthdrawal" style="margin-right:5px;">
+        提现
+      </view>
+    </view>
+  </view>
+  <view class="assets">
+    <view class="amount">
+      <view class="recharge">冻结金币</view>
+      <view class="rmb">{{frozen}}币</view>
+    </view>
+    <view class="amount">
+      <view class="recharge">可提现金额</view>
+      <view class="rmb">¥ {{assets}}元</view>
+    </view>
+  </view>
+  <view class="title">交易明细</view>
+  <view style="width:100%;height:10px;background-color:#fff;margin-bottom:10px;"></view>
+  <view class="tran">
+    <view class="detail">
+      <view class="row" wx:for="{{array}}">
+        <view class="indicate" wx:if="{{item.type=='1'||item.type=='2'}}" block>
+          <image mode="widthFix" src="../../assets/img/up.png"></image>
+        </view>
+        <view class="indicate" wx:if="{{item.type=='3'||item.type=='4'}}" block>
+          <image mode="widthFix" src="../../assets/img/down.png"></image>
+        </view>
+        <view class="money fr">
+          <text class="{{item.type=='1'||item.type=='2'? 'red' : 'green'}}" style="font-size:17px;margin-right:5px;">
+            {{item.type=='1'||item.type=='2'? '+' : '-'}}</text>
+          <text style="margin-right:5px;">¥</text>{{item.money}}</view>
+        <block wx:if="{{item.type == 1 || item.type == 3}}">
+          <view class="rechange" style="margin-top:10px;">{{item.remarks}}</view>
+        </block>
+        <block wx:elif="{{item.type == 2}}">
+          <view class="rechange">{{item.remarks[0]}}售出
+          </view>
+          <view class="rechange">期号：{{item.remarks[1]}}</view>
+        </block>
+        <block wx:else>
+          <view class="rechange">{{item.remarks[0]}}买入
+          </view>
+          <view class="rechange">期号：{{item.remarks[1]}}</view>
+        </block>
+        <view class="shijian">{{item.add_time}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="fixd" bindtap="faq">常见问题</view>

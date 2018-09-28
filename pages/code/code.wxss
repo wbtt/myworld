@@ -1,0 +1,19 @@
+/* pages/code/code.wxss */
+page{
+  background-color: #cf1e25;
+}
+.container{
+  padding-top: 100rpx;
+}
+image{
+  width: 60%;
+  height: 300px;
+  position: relative;
+}
+.code{
+  position: absolute;
+  color: #fff;
+  top:70%;
+  font-size: 22px;
+  left:40%;
+}

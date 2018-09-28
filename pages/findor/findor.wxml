@@ -1,0 +1,17 @@
+<!--pages/findor/findor.wxml-->
+<view class="container">
+<view class="classname">需要输入的订单号为京东商城购买商品所对应的11位订单号。</view>
+<view class="classname">电脑版：</view>
+<view class="classname">搜索京东</view>
+<view class="classname"><image mode="widthFix" src="../../assets/img/find_1.png" style="width:100%;height:60px;"></image></view>
+<view class="classname">我的订单（左上方）</view>
+<view class="classname"><image mode="widthFix" src="../../assets/img/find_2.png" style="width:100%;height:20px;"></image></view>
+<view class="classname">点击订单详情</view>
+<view class="classname"><image mode="widthFix" src="../../assets/img/find_3.png" style="width:100%;height:60px;"></image></view>
+<view class="classname">复制订单号</view>
+<view class="classname"><image mode="widthFix" src="../../assets/img/find_4.png" style="width:100%;height:35px;"></image></view>
+<view class="classname">APP版：</view>
+<view class="classname">打开手机京东APP-我的-我的订单-点击安培斯通订单-获得订单号</view>
+<view class="classname">微信版：</view>
+<view class="classname">打开微信-发现-购物-个人中心-查看所有订单-点击安培斯通订单-获得订单号</view>
+</view>

@@ -1,0 +1,33 @@
+/* pages/portrait/portrait.wxss */
+.container {
+  padding-top: 0rpx;
+  font-size: 14px;
+  text-align: left;
+}
+image{
+  width: 90%;
+  height: 289px;
+  border-radius:5%;
+  margin-top: 20px;
+  margin-bottom: 50px; 
+    border: 1px solid #eaeaea;
+}
+button{
+  background-color: #cf1e25;
+  color: #fff;
+  width: 75%;
+  line-height: 2.5;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+.button-hover {
+  background-color: #cf1e25;
+  color: #fff;
+}
+button:last-child{
+background-color: #cf1e25;
+}
+form{
+  width: 100%;
+  text-align: center;
+}

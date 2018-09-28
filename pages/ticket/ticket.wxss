@@ -1,0 +1,116 @@
+/* pages/ticket/ticket.wxss */
+.container {
+  padding-top: 0rpx;
+  font-size: 14px;
+  background: #fff;
+
+}
+.myform {
+  background: #fff;
+  width: 90%;
+}
+.section {
+  width: 100%;
+  overflow: hidden;
+  padding: 8px 0;
+  line-height:26px;
+   box-shadow: -1px 0px 5px #d2d2d2;
+   border-radius: 5px;
+   margin-top: 15px;
+}
+.section__title {
+  float: left;
+  width: 20%;
+  text-align: center;
+  border-right: 1px solid #DCDCDD;
+  margin-right: 10px;
+}
+.section input {
+  width: 70%;
+}
+.btn-area {
+  margin: 15px 0;
+}
+.find{
+  text-align: right;
+  padding: 5px 0;
+  color:#718CC7;
+  font-size: 12px;
+  margin-right:15px;
+
+}
+.input_share{
+  width: 50%;
+}
+.order,
+.share{
+  width: 150%;
+}
+ .block{
+  display: block;
+}
+.none{
+  display: none;
+}
+.b1,.b2,.b3{position:fixed;width:100%;height:100%;top:0px;background:rgba(0,0,0,0.4);overflow: hidden;z-index:2;
+} 
+.particulars{
+  position: absolute;
+  top:20%;
+  left: 5%;
+  background-color: #fff;
+  width: 90%;
+  padding: 20rpx 0;
+    border-radius: 5px;
+}
+.minute{
+  padding: 0 20px;
+  max-height: 270px;
+  margin-top: 10px;
+  overflow: auto;
+}
+.header{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+button::after {
+  border: 0;
+}
+.phone_code {
+  height: 26px;
+  line-height: 26px;
+  border: 0;
+  border-radius: 20px;
+  background: transparent;
+  color: #cf1e25;
+  width: 22%;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 14px;
+  padding: 0;
+  
+}
+.button{
+  background: #cf1e25;
+  color: #fff;
+  line-height:2.3;
+font-size: 16px;
+}
+button[disabled][type="default"], wx-button[disabled]:not([type]) {
+  background: #ccc;
+}
+.reg_logo{
+  width: 90%;
+  height: 160px;
+  margin-top: 5px;
+}
+.place {
+  color: #6f6f6f;
+  font-family: "微软雅黑";
+}
+checkbox{
+  transform:scale(.7);
+}

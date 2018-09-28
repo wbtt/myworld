@@ -1,0 +1,41 @@
+<view class="container">
+  <!--<view class="section">
+    <view class="row sechead">
+      <view class="flex-item-6">
+        <view class="fl" bindtap="newscategory">
+          查看更多分类
+        </view>
+      </view>
+      <view class="flex-item-6">
+        <view class="fr" bindtap="newscategory">more</view>
+      </view>
+    </view>
+  </view>-->
+  <view class="bar" bindtap="tabFun">
+    <view wx:for="{{ay}}" class="bar1 {{tabArr.curHdIndex=='0'? 'active' : ''}}" data-id="0" wx:if="{{item.cid==1}}">{{item.cate_name}}</view>
+    <view wx:for="{{ay}}" class="bar2 {{tabArr.curHdIndex=='1'? 'active' : ''}}" data-id="1" wx:if="{{item.cid==4}}">{{item.cate_name}}</view>
+    <view wx:for="{{ay}}" class="bar3 {{tabArr.curHdIndex=='2'? 'active' : ''}}" data-id="2" wx:if="{{item.cid==7}}" style="width:34%;">{{item.cate_name}}</view>
+  </view>
+  <!--tab1-->
+  <view class="detail {{tabArr.curBdIndex=='0'? 'active' : ''}}">
+    <view class="new" wx:for="{{array}}" data-id="{{item.news_id}}" bindtap="todetail" style="border-bottom:1px solid #E4E4E4;padding:20rpx 10rpx">
+      <!--<image src="http://wx.yidaihuo.cn{{item.list_img}}"></image>-->
+      <view class="time">{{item.add_time}}</view>
+      <view class="title">{{item.title}}</view>
+    </view>
+  </view>
+  <!--tab2-->
+  <view class="detail {{tabArr.curBdIndex=='1'? 'active' : ''}}">
+    <view class="pic_new" wx:for="{{brray}}" data-id="{{item.news_id}}" bindtap="todetail">
+      <view class="pic_title"><view class="classname">{{item.title}}</view></view>
+      <image mode="widthFix" src="https://wx.yidaihuo.cn/{{item.list_img[0]}}"></image>
+    </view>
+  </view>
+  <!--tab3-->
+  <view class="detail {{tabArr.curBdIndex=='2'? 'active' : ''}}">
+    <view class="pic_new" wx:for="{{crray}}" data-id="{{item.news_id}}" bindtap="todetail">
+      <view class="pic_title"><view class="classname">{{item.title}}</view></view>
+      <image mode="widthFix" src="https://wx.yidaihuo.cn/{{item.list_img[0]}}"></image>
+    </view>
+  </view>
+</view>

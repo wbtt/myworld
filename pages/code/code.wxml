@@ -1,0 +1,4 @@
+<view class="container">
+  <image mode="widthFix" src="../../assets/img/fx_bk.png"></image>
+  <view class="code">{{code}}</view>
+</view>

@@ -1,0 +1,50 @@
+<!--pages/goodsdetail/goodsdetail.wxml-->
+<view class="container">
+  <!--商品图片-->
+  <view class="goodsthumb">
+    <image mode="widthFix" src="{{imgurl}}{{data.goodsthumb}}"></image>
+  </view>
+  <!--商品基本信息(标题、价格、描述)-->
+  <view class="basicinfo">
+    <view class="title">{{data.goodsname}}</view>
+    <view class="price">¥ {{data.goodsprice}}</view>
+    <view class="desc">{{data.goodsdesc}}<view class="kucun fr">剩余库存{{data.kucun}}</view></view>
+      
+  </view>
+
+  <!--增加或减少购买商品数量-->
+  <view class="addcartnum">
+    <view class="partnotemsg">数量：</view>
+    <view class="quantity-wrapper">
+      <view class="stepper">
+        <text class="{{minusStatus}}" bindtap="bindMinus">-</text>
+        <input type="number" bindchange="bindManual" value="{{num}}"/>
+        <text class="normal" bindtap="bindPlus"  data-id="{{data.kucun}}">+</text>
+      </view>
+    
+    </view>
+
+  </view>
+  <!--商品详情-->
+  <view class="detail" wx:if="{{data.details != null || data.details1 != null}}">
+    <text>商品详情：</text>
+    <view wx:if="{{data.details != null}}" class="imglist">
+      <image mode="widthFix" src="{{imgurl}}{{data.details}}"></image>
+    </view>
+    <view wx:if="{{data.details1 != null}}" class="imglist">
+      <image  mode="widthFix" src="{{imgurl}}{{data.details1}}"></image>
+    </view>
+  </view>
+</view>
+
+<view class="cartfixed">
+  <view class="cartlist" bindtap="tocart">
+    <view class="cartico">
+      <text class="carnum" wx:if="{{carnum > 0}}">{{carnum}}</text>
+      <image mode="widthFix" src="../../assets/img/cart.png"></image>
+    </view>
+    <view class="carttitle">购物车</view>
+  </view>
+  <view class="addcart" bindtap="addcart">加入购物车</view>
+  <view class="directorder" bindtap="directorder"  data-id="{{data.kucun}}">立即购买</view>
+</view>

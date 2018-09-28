@@ -1,0 +1,51 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image mode="widthFix" src="{{url}}{{item.pic}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="container">
+  <view class="category">
+    <view class="item" wx:for="{{goodsList}}" wx:for-item="cate" bindtap="more" data-id="{{cate.id }}" data-name="{{cate.name }}">
+      <view class="logo">
+        <image mode="widthFix" src="{{url}}{{cate.logo}}"></image>
+      </view>
+      <!--<view class="cname">{{cate.name}}</view>-->
+    </view>
+  </view>
+  <block wx:for="{{goodsList}}" wx:for-item="items">
+    <view class="section">
+      <view class="row sechead">
+        <view class="flex-item-6">
+          <view class="fl">
+            <image mode="widthFix" class="icon" src="../../assets/img/gds.png" />
+          </view>
+          <view class="fl">
+            {{items.name}}
+          </view>
+        </view>
+        <view class="flex-item-6">
+          <view class="fr">
+            >
+          </view>
+          <view class="fr" bindtap="more" data-id="{{items.id}}" data-name="{{items.name}}">更多</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="flex-wrp">
+
+        <view class="flex-item" wx:for="{{items.child}}" wx:if="{{index <= 1}}" bindtap="goodsdetail" data-id="{{item.id}}">
+          <image  src="{{url}}{{item.goodsthumb}}" mode="widthFix" class="slide-img" />
+          <view class="weizi">{{item.goodsname}}</view>
+          <view class="cankao">
+            <text class="qianys">¥{{item.goodsprice}}</text>
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </block>
+</view>

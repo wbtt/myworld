@@ -1,0 +1,13 @@
+<!--pages/service/service.wxml-->
+<!--<view class="container">
+  <view class="action-item"><image class="icon" src="../../assets/img/falv.png"></image>法律声明<view class="action" bindtap="law">></view></view>
+  <view class="action-item"><image class="icon" src="../../assets/img/guize.png"></image>平台规则<view class="action" bindtap="">></view></view>
+  <view class="action-item"><image class="icon" src="../../assets/img/yuyan.png"></image>国际运输<view class="action" bindtap="">></view></view>
+  <view class="action-item"><image class="icon" src="../../assets/img/jiaoyi.png"></image>如何交易<view class="action" bindtap="">></view></view>
+  <view class="action-item"><image class="icon" src="../../assets/img/jiaru.png"></image>加入我们<view class="action" bindtap=""> ></view></view>
+  <view class="action-item"><image class="icon" src="../../assets/img/phone.png"></image>联系我们<view class="action" bindtap=""> ></view></view>
+</view>-->
+<view class="container">
+    <view class="action-item"  wx:for="{{array}}" data-id="{{item.scid}}" bindtap="service">{{item.sc_name}} <view class="action" >></view> 
+  </view>
+</view>

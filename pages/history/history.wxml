@@ -1,0 +1,65 @@
+<!--pages/history/history.wxml-->
+<view class="container">
+  <view class="bar" bindtap="tabFun">
+    <view class="bar1 {{tabArr.curHdIndex=='0'? 'active' : ''}}" data-id="0">审核中</view>
+    <view class="bar2 {{tabArr.curHdIndex=='1'? 'active' : ''}}" data-id="1">已审核</view>
+    <view class="bar3 {{tabArr.curHdIndex=='2'? 'active' : ''}}" data-id="2">未通过</view>
+  </view>
+  <!--没有订单显示-->
+  <view wx:if="{{array==''}}" class="detail {{tabArr.curBdIndex=='0'? 'active' : ''}}" style="color:#5B5B5B;">您没有正在审核中的订单</view>
+  <view wx:if="{{brray==''}}" class="detail {{tabArr.curBdIndex=='1'? 'active' : ''}}" style="color:#5B5B5B;">您没有已审核的订单</view>
+  <view wx:if="{{crray==''}}" class="detail {{tabArr.curBdIndex=='2'? 'active' : ''}}" style="color:#5B5B5B;">您没有未通过的订单</view>
+  <!--有订单显示-->
+  <view wx:if="{{array!=''}}" class="detail {{tabArr.curBdIndex=='0'? 'active' : ''}}" wx:for="{{array}}">
+    <view class="img">
+      <view class="classname">订单号:</view>
+      <view class="classname">分享码:</view>
+      <view class="classname">手机号:</view>
+      <view class="classname">领票申请时间:</view>
+      <view class="classname">受理时间:</view>
+    </view>
+    <view class="particular">
+      <view class="classname">{{item.order_no}}</view>
+      <view class="classname">{{item.share_code}}</view>
+      <view class="classname">{{item.phone}}</view>
+      <view class="classname">{{item.create_time}}</view>
+      <view class="classname">{{item.acceptance_time}}</view>
+    </view>
+  </view>
+  <view wx:if="{{brray!=''}}" class="detail {{tabArr.curBdIndex=='1'? 'active' : ''}}" wx:for="{{brray}}">
+    <view class="img">
+      <view class="classname">订单号:</view>
+      <view class="classname">分享码:</view>
+      <view class="classname">手机号:</view>
+      <view class="classname">领票申请时间:</view>
+      <view class="classname">受理时间:</view>
+    </view>
+    <view class="particular">
+      <view class="classname">{{item.order_no}}</view>
+      <view class="classname">{{item.share_code}}</view>
+      <view class="classname">{{item.phone}}</view>
+      <view class="classname">{{item.create_time}}</view>
+      <view class="classname">{{item.acceptance_time}}</view>
+    </view>
+  </view>
+  <view wx:if="{{crray!=''}}" class="detail {{tabArr.curBdIndex=='2'? 'active' : ''}}" wx:for="{{crray}}" style="border:0;">
+    <view class="img">
+      <view class="classname">订单号:</view>
+      <view class="classname">分享码:</view>
+      <view class="classname">手机号:</view>
+      <view class="classname">领票申请时间:</view>
+      <view class="classname">受理时间:</view>
+    </view>
+    <view class="particular">
+      <view class="classname">{{item.order_no}}</view>
+      <view class="classname">{{item.share_code}}</view>
+      <view class="classname">{{item.phone}}</view>
+      <view class="classname">{{item.create_time}}</view>
+      <view class="classname">{{item.acceptance_time}}</view>
+    </view>
+    <view class="refused">
+      <view class="classname">未通过原因: {{item.reason}}</view>
+    </view>
+  </view>
+
+</view>

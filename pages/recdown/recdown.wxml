@@ -1,0 +1,24 @@
+<!--pages/recdown/recdown.wxml-->
+<view class="prompt">
+   <image mode="widthFix" class="fl" src="../../assets/img/ok.png"></image>
+   <view class="fl" style="line-height:40px;">恭喜您!</view>
+   <view class="fl" style="line-height:40px;">提现申请成功</view>
+    <view class="fl" style="line-height:40px;">预计1-2个工作日到账</view>
+</view>
+<view class="pay">
+       <view class="amount">
+       <image mode="widthFix" class="icon" src="../../assets/img/tx.png"></image>
+          <text class="recharge">提现金额：</text>
+          <text class="rmb">¥</text>
+          <text class="num">{{money}}</text>
+          <text class="yuan">币</text>
+       </view>
+       <view class="amount1">
+        <image mode="widthFix" class="icon" src="../../assets/img/zzc.png"></image>
+          <text class="recharge">账户余额：</text>
+          <text class="rmb">¥</text>
+          <text class="num">{{assets}}</text>
+          <text class="yuan">币</text>
+       </view>
+</view>
+ <button bindtap="return">返回</button>

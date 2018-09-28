@@ -1,0 +1,10 @@
+/* pages/findor/findor.wxss */
+.container{
+  padding-top:20rpx; 
+  font-size: 16px;
+}
+.container view{
+  width: 95%;
+  line-height:25px;
+
+}

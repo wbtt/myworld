@@ -1,0 +1,49 @@
+<!--<view class="container">
+  <view class="logo-view">
+    <image mode="aspectFit" src="../../assets/img/logo.png" class="logo"></image>
+  </view>
+  <form class="input-group" bindsubmit="formSubmit">
+    <view class="input-row">
+      <label class="flex-item fl">手机号</label>
+      <input type="number" class="flex-item fr" name="phone" maxlength="11" />
+    </view>
+    <view class="input-row">
+      <label class="flex-item fl">密码</label>
+      <input type="password" class="flex-item fr" name="password" maxlength="20" />
+    </view>
+    <view class="forgot-pwd" bindtap="forget">忘记密码？</view>
+    <view class="button-row">
+      <button formType="submit" bindtap="login"> 登录 </button>
+      <button type="default" bindtap="reg"> 注册 </button>
+    </view>
+  </form>
+</view>
+<view class="bq" style="bottom:20px;">Copyright 2017-2020©，</view>
+<view class="bq" style="bottom:5px;">All rights reserved by Amberstones®安培斯通®</view>-->
+<view class="container">
+  <view class="logo-view">
+    <image mode="widthFix" src="../../assets/img/logo.png" class="logo"></image>
+  </view>
+  <view class="prompt">
+    <image mode="widthFix" src="../../assets/img/please.png" class="please"></image>
+  </view>
+  <form class="input-group" bindsubmit="formSubmit">
+    <view class="input-row">
+      <label class="flex-item fl"><image mode="aspectFit" src="../../assets/img/pho.png" class="pho"></image></label>
+      <input type="number" class="flex-item fr" name="phone" maxlength="11" placeholder="请输入手机号" placeholder-class="holder"/>
+    </view>
+    <view class="input-row">
+      <label class="flex-item fl"><image mode="aspectFit" src="../../assets/img/ma.png" class="mima"></image></label>
+      <image mode="aspectFit" src="../../assets/img/eye_1.png" class="eye fr"></image>
+      <input type="password" class="flex-item fr" name="password" maxlength="20" placeholder="请输入密码" placeholder-class="holder" style="width:63%;"/>
+      
+    </view>
+    <view class="button-row">
+      <button formType="submit" bindtap="login"> 登录 </button>
+    </view>
+    <view class="fl forgot-pwd" bindtap="reg">快速注册</view>
+    <view class="fr forgot-pwd" bindtap="forget">忘记密码？</view>
+  </form>
+</view>
+<view class="bq" style="bottom:40rpx;">Copyright 2017-2020©，</view>
+<view class="bq" style="bottom:10rpx;">All rights reserved by Amberstones®安培斯通®</view>

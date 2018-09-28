@@ -1,0 +1,45 @@
+/* pages/name/name.wxss */
+
+.container {
+  padding: 30rpx 20rpx;
+  font-size: 14px;
+  text-align: left;
+}
+.name {
+  background-color: #fff;
+  width: 80%;
+  font-size: 18px;
+  padding: 10px 0;
+  vertical-align: middle;
+   display: inline-block;
+  
+}
+
+.myform {
+  background: #fff;
+  width: 100%;
+}
+
+.section {
+  border-bottom: 5px solid rgb(235, 239, 237);
+  line-height: 20px;
+}
+
+button {
+  width: 95%;
+  line-height: 2.2;
+  font-size: 18px;
+  margin-top: 15px;
+  background-color: #cf1e25;
+   color: #fff;
+}
+.button-hover {
+  background-color: #cf1e25;
+  color: #fff;
+}
+.icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+  vertical-align: middle;
+}

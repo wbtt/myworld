@@ -1,0 +1,31 @@
+/* pages/orderdetail/orderdetail.wxss */
+
+.container {
+  padding-top: 10px;
+}
+
+.order-detail {
+  width: 96%;
+  overflow: hidden;
+  font-size: 14px;
+  color: #999;
+  line-height: 26px;
+}
+
+.status text, .total text {
+  color: red;
+}
+.total {
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+.total text {
+  font-size: 18px;
+}
+.default text {
+  color: #333;
+}
+.pay button {
+  line-height: 2;
+  margin-bottom: 20rpx;
+}

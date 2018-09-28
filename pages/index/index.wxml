@@ -1,0 +1,130 @@
+<!--index.wxml-->
+<!--<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{url}}{{item.pic}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="container">
+  <view class="row mainnav">
+    <image src="../../assets/img/ticket.png" mode="widthFix" style="width:100%;" bindtap="ticket"></image>-->
+<!--<view class="flex-item-3" bindtap="user">
+      <image src="../../assets/img/wd.png" />
+      <view>我的</view>
+    </view>
+    <view class="flex-item-3" bindtap="market">
+      <image src="../../assets/img/hq.png" />
+      <view>行情</view>
+    </view>
+    <view class="flex-item-3" bindtap="news">
+      <image src="../../assets/img/xw.png" />
+      <view>新闻</view>
+    </view>
+    <view class="flex-item-3" bindtap="setting">
+      <image src="../../assets/img/sc.png" />
+      <view>设置</view>
+    </view>
+  </view>-->
+<!--<view class="row mainnav" style="border:0; margin-top:10px;">
+    <view class="flex-item-3" bindtap="ticket">
+      <image src="../../assets/img/sc.png" />
+      <view>快速领券</view>
+    </view>
+    <view class="flex-item-3">
+      <image src="../../assets/img/gd.png" />
+      <view>更多</view>
+    </view>
+  </view>-->
+<!--<block wx:for="{{goodsList}}" wx:for-item="items">
+    <view class="section">
+      <view class="row sechead">
+        <view class="flex-item-6">
+          <view class="fl">
+            <image class="icon" src="../../assets/img/gds.png" />
+          </view>
+          <view class="fl">
+            {{items.name}}
+          </view>
+        </view>
+        <view class="flex-item-6">
+          <view class="fr">
+            <image class="icon" src="../../assets/img/gdr.png" />
+          </view>
+          <view class="fr" bindtap="more" data-id="{{items.id}}" data-name="{{items.name}}">更多</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="flex-wrp">
+
+        <view class="flex-item" wx:for="{{items.child}}" wx:if="{{index <= 1}}" bindtap="goodsdetail" data-id="{{item.id}}">
+          <image src="{{url}}{{item.goodsthumb}}" mode="scaleToFill" class="slide-img" />
+          <view class="weizi">{{item.goodsname}}</view>
+          <view class="cankao">
+            <text class="qianys">¥{{item.goodsprice}}</text>
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </block>
+
+</view>-->
+<view class="container">
+  <view class="person">
+    <image class="pic" src="../../assets/img/index_bk.png"></image>
+    <view class="banben">v1.0.22</view>
+    <!-- <button class="content" open-type="contact">
+      <image src="../../assets/img/huihua.png"></image>
+    </button> -->
+    <view class="user-portrait" wx:if="{{userInfo.portrait != ''}}">
+      <image class="portrait" mode="scaleToFill" src="{{userInfo.portrait}}"></image>
+    </view>
+    <view class="user-portrait" wx:else>
+      <image class="portrait" mode="scaleToFill" src="../../assets/img/portrait.png"></image>
+    </view>
+    <view class="name" wx:if="{{uid!=''}}" block>{{userInfo.nickname}}</view>
+    <view class="dl" bindtap="login" wx:if="{{uid==''}}" block>登录</view>
+    <view class="zc" bindtap="reg" wx:if="{{uid==''}}" block>注册</view>
+    <view class="assets">我的总资产：{{all}}
+      <image src="../../assets/img/eye.png" style="width:25px;height:15px;  vertical-align: top;" bindtap="assets"></image>
+    </view>
+    <view class="ticket">我的分享券：
+      <text class="detail" bindtap="mystock">查看详情</text>
+    </view>
+    <view class="row">
+    <view class="flex-item-3" bindtap="account">
+        <image src="../../assets/img/don_4.png" mode="widthFix"></image>
+      </view>
+      <view class="flex-item-3" bindtap="ticket">
+        <image src="../../assets/img/don_1.png" mode="widthFix"></image>
+      </view>
+      <view class="flex-item-3" bindtap="sharecode">
+        <image src="../../assets/img/don_2.png" mode="widthFix"></image>
+      </view>
+      <view class="flex-item-3" bindtap="stock">
+        <image src="../../assets/img/don_3.png" mode="widthFix"></image>
+      </view>
+    </view>
+  </view>
+  <view class="title">
+    <image class="icon" src="../../assets/img/gds.png" />最新公告
+    <text class="fr" style="font-size:14px;" bindtap="newsmore">查看更多</text>
+  </view>
+  <view class="detail" style="color:#4D4D4D;font-size:28rpx;">
+    <view class="new" wx:for="{{array}}" data-id="{{item.news_id}}" bindtap="todetail">
+      <view class="time">{{item.add_time}}</view>
+      <view class="tit">{{item.title}}</view>
+    </view>
+  </view>
+  <view class="title">
+    <image class="icon" src="../../assets/img/gds.png" />热门资讯
+  </view>
+  <view class="detail">
+    <view class="pic_new" wx:for="{{brray}}" data-id="{{item.news_id}}" bindtap="todetail">
+      <image mode="widthFix" src="http://wx.yidaihuo.cn{{item.list_img[0]}}"></image>
+    </view>
+  </view>
+</view>

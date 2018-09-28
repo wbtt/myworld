@@ -1,0 +1,39 @@
+/* pages/person/person.wxss */
+
+.container {
+  padding-top: 0rpx;
+  font-size: 14px;
+  background: rgb(235, 239, 237);
+}
+
+.action-item {
+  background: #fff;
+  width: 94%;
+  padding: 0 3%;
+  line-height: 49px;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.action-item:first-child {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  line-height: 74px;
+}
+
+.action {
+  float: right;
+  color: #666;
+}
+
+image {
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+  border-radius: 5%;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+}

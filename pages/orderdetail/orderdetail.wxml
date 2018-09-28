@@ -1,0 +1,28 @@
+<!--pages/orderdetail/orderdetail.wxml-->
+<view class="container">
+  <view class="order-detail">
+    <view class="status">状态：
+      <text wx:if="{{order.staus == 1}}">待支付</text>
+      <text wx:else>已支付</text>
+    </view>
+    <view class="default">订单编号：
+      <text>{{order.orderno}}</text>
+    </view>
+    <view class="default">下单时间：
+      <text>{{order.buytime}}</text>
+    </view>
+    <view class="default">可用余额：
+      <text>¥{{order.money}}</text>
+    </view>
+    <view class="total">实付金额：
+      <text>¥{{order.buyprice}}</text>
+    </view>
+
+    <view class="pay">
+      <button type="warn" disabled="{{disabled}}" loading="{{loading}}" bindtap="pay">余额支付</button>
+    </view>
+    <view class="pay">
+      <button type="primary" disabled="{{abled}}" loading="{{load}}" bindtap="wxpay">微信支付</button>
+    </view>
+  </view>
+</view>

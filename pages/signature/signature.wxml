@@ -1,0 +1,7 @@
+<!--pages/signature/signature.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit" class="myform">
+    <textarea placeholder="修改签名" name="autograph" class="name" value="{{autograph}}" />
+    <button form-type="submit" type="primary"> 提交 </button>
+  </form>
+</view>

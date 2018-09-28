@@ -1,0 +1,73 @@
+<!--<view class="container">
+  <view class="row" style="background-color:#d0d0d0;">
+    <view class="flex-item-4">名称</view>
+    <view class="flex-item-4">期号</view>
+    <view class="flex-item-4">数量</view>
+    <view class="flex-item-3">操作</view>
+  </view>
+  <view class="row" wx:for="{{array}}">
+    <view class="flex-item-4">{{item.product_name}}</view>
+    <view class="flex-item-4">{{item.product_no}}</view>
+    <view class="flex-item-4">{{item.number}}</view>
+    <button class="flex-item-3" data-id="{{item.pid}}" bindtap="sell">卖出</button>
+  </view>
+</view>-->
+<view class="container">
+  <view class="top">
+  </view>
+  <view class="detail" wx:for="{{array}}">
+    <view class="row">
+      <view class="flex-item-6" style=" border-top: 1rpx solid #dcdcdd;">
+        <view class="fl">名称</view>
+        <view class="fr">{{item.product_name}}</view>
+      </view>
+      <view class="flex-item-6" style=" border-top: 1rpx solid #dcdcdd;">
+        <view class="fl">期号</view>
+        <view class="fr">{{item.product_no}}</view>
+      </view>
+    </view>
+    <view class="row">
+      <view class="flex-item-6">
+        <view class="fl">现价</view>
+        <view class="fr">¥{{item.new}}</view>
+      </view>
+      <view class="flex-item-6">
+        <view class="fl">开盘价</view>
+        <view class="fr">¥{{item.msprice}}</view>
+      </view>
+    </view>
+    <view class="row">
+      <view class="flex-item-6">
+        <view class="fl">昨收</view>
+        <view class="fr">¥{{item.closeing_price}}</view>
+      </view>
+      <view class="flex-item-6">
+        <view class="fl">持仓数量</view>
+        <view class="fr">{{item.number}}</view>
+      </view>
+    </view>
+    <view class="row">
+      <view class="flex-item-6">
+        <view class="fl">涨跌幅</view>
+        <view class="fr red" wx:if="{{item.increase>0}}">+{{item.increase}}%</view>
+        <view class="fr green" wx:elif="{{item.increase<0}}">{{item.increase}}%</view>
+        <view class="fr" wx:else>{{item.increase}}%</view>
+      </view>
+      <view class="flex-item-6">
+        <view class="fl">市值</view>
+        <view class="fr">¥{{item.shizhi}}</view>
+      </view>
+    </view>
+    <!-- <view class="row">
+      <view class="flex-item-6">
+        <view class="fl">市值</view>
+      </view>
+      <view class="flex-item-6" style="border-left:1px solid #fff;">
+      <view class="fr">¥{{item.shizhi}}</view>
+      </view>
+    </view> -->
+    <view class="fl" wx:if="{{item.pid==39&&time>0}}">该产品还有{{time}}天可以卖出</view>
+    <button data-id="{{item.pid}}" bindtap="sell"  wx:if="{{item.pid==39&&time>0}}" disabled="{{disabled}}">卖出</button>
+    <button data-id="{{item.pid}}" bindtap="sell"  wx:else>卖出</button>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+<!--pages/rectop/rectop.wxml-->
+<view class="prompt">
+   <image mode="widthFix" src="../../assets/img/ok.png"></image>
+   <text>恭喜您</text>
+    <text>充值成功!</text>
+</view>
+<view class="pay">
+       <view class="amount">
+          <image mode="widthFix" class="icon" src="../../assets/img/tx.png"></image><text class="recharge">充值金额：</text>
+          <text class="rmb">¥</text>
+          <text class="num">{{money}}</text>
+          <text class="yuan">币</text>
+       </view>
+       <view class="amount1">
+          <image mode="widthFix" class="icon" src="../../assets/img/zzc.png"></image>
+          <text class="recharge">账户余额：</text>
+          <text class="rmb">¥</text>
+          <text class="num">{{total}}</text>
+          <text class="yuan">币</text>
+       </view>
+</view>
+ <button bindtap="return">返回</button>

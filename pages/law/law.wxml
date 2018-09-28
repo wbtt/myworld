@@ -1,0 +1,29 @@
+<!--pages/law/law.wxml-->
+<view class="container">
+  <view class="title">
+    {{obj.title}}
+  </view>
+  <view class="content">
+    <view class="describe" style="word-break:break-all;">
+     {{obj.content}}
+     </view>
+  </view>
+  <!--<view class="content">
+    <view class="belongs">
+      By China Daily
+    </view>
+    <view class="data">
+      Updated: November 25, 2016
+    </view>
+    <view class="image">
+    <image src="../../assets/img/tu3.png"/>
+    </view>
+    <view class="describe">
+    Democratic People's Republic of Korea launches a long range rocket launched into the air in this file still image taken from KRT video footage, released by Yonhap on February 7, 2016. [Photo / Agencies]
+    </view>
+    <view class="end">
+      Precisely 11 weeks have passed since Pyongyang carried out its fifth and largest nuclear test. And it remains an open question whether the UN Security Council can put the draft of a new resolution to the vote next week.
+    </view>
+  </view>-->
+</view>
+

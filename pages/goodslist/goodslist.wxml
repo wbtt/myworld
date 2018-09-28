@@ -1,0 +1,14 @@
+<!--pages/goodslist/goodslist.wxml-->
+<view class="container">
+  <view class="section">
+    <view class="flex-wrp">
+      <view class="flex-item" wx:for="{{order_list}}"  bindtap="goodsdetail" data-id="{{item.id}}">
+        <image  src="{{url}}{{item.goodsthumb}}" mode="widthFix" class="slide-img" />
+        <view class="weizi">{{item.goodsname}}</view>
+        <view class="cankao">
+          <text class="qianys">¥{{item.goodsprice}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

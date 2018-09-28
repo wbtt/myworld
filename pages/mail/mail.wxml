@@ -1,0 +1,12 @@
+<!--pages/mail/mail.wxml-->
+ <view class="container">
+  <form bindsubmit="formSubmit" bindreset="formReset" class="myform">
+    <view class="section">
+       <image mode="widthFix" class="icon" src="../../assets/img/email.png"></image>
+      <input name="email" value="{{email}}" class="mail" placeholder="修改邮箱" />
+    </view>
+    <view class="btn-area">
+      <button formType="submit">保存提交</button>
+    </view>
+  </form>
+</view>

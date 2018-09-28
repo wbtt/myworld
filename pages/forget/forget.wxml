@@ -1,0 +1,29 @@
+<!--pages/forget/forget.wxml-->
+<view class="container">
+  <form class="input-group" bindsubmit="formSubmit">
+    <view class="input-row">
+      <label class="flex-item fl"><image class="icon" src="../../assets/img/shouji.png"></image></label>
+      <input type="number" class="flex-item f1" name="phone" maxlength="11" placeholder="输入手机号码" placeholder-class="place" bindblur="mobileInputEvent"/>
+    </view>
+    <!--<view class="input-row">
+      <label class="flex-item fl"><image class="icon" src="../../assets/img/youxiang.png"></image></label>
+      <input type="text" class="flex-item fr" name="email" placeholder="输入邮箱" placeholder-class="place" />
+    </view>-->
+        <view class="input-row">
+      <label class="flex-item fl"><image class="icon" src="../../assets/img/suo.png"></image></label>
+      <input type="password" class="flex-item f1" name="password" maxlength="20" placeholder="设置新密码" placeholder-class="place" />
+    </view>
+    <view class="input-row">
+      <label class="flex-item fl"><image class="icon" src="../../assets/img/yaoshi.png"></image></label>
+      <input type="password" class="flex-item f1" name="repwd" maxlength="20" placeholder="确认新密码" placeholder-class="place" />
+    </view>
+    <view class="input-row" style="position: relative;">
+      <label class="flex-item fl"><image class="icon" src="../../assets/img/yanzheng.png"></image></label>
+      <input type="number" class="flex-item f1" name="verify" placeholder="验证码" placeholder-class="place" />
+      <button class="phone_code" bindtap="setVerify" disabled="{{buttonDisable}}">{{verifyCodeTime}}</button>  
+    </view>
+    <view class="button-row">
+      <button type="default" formType="submit"> 确定 </button>
+    </view>
+  </form>
+</view>

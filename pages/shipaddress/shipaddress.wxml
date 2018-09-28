@@ -1,0 +1,34 @@
+<view class="container">
+  <form bindsubmit="formSubmit" class="myform">
+    <view class="section">
+      <view class="section__title fl">收货人：</view>
+      <input name="consignee" class="fr" value="{{address.consignee}}" />
+    </view>
+    <view class="section">
+      <view class="section__title fl">手机号码：</view>
+      <input name="phone" class="fr" value="{{address.phone}}" type="number" confirm-type="done" maxlength="11" />
+    </view>
+    <view class="section">
+      <view class="section__title fl">所在省：</view>
+      <input name="province" class="fr" value="{{address.province}}" />
+    </view>
+    <view class="section">
+      <view class="section__title fl">所在市：</view>
+      <input name="city" class="fr" value="{{address.city}}" />
+    </view>
+    <view class="section">
+      <view class="section__title fl">所在区：</view>
+      <input name="region" class="fr" value="{{address.region}}" />
+    </view>
+    <view class="section">
+      <view class="section__title fl">详细地址：</view>
+      <input name="block" class="fr" value="{{address.block}}" placeholder="街道、楼牌号等" />
+    </view>
+    <!--<input name="province" type="text" class="hide" value="{{address.province}}" />
+    <input name="city" type="text" class="hide" value="{{address.city}}" />-->
+    <input name="aid" type="text" class="hide" value="{{address.aid}}" />
+    <view class="btn-area">
+      <button formType="submit" >保存</button>
+    </view>
+  </form>
+</view>

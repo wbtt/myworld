@@ -1,0 +1,141 @@
+<!--<view class="container">
+  <view class="user pos-relative">
+    <view class="user-portrait fl" wx:if="{{userInfo.portrait != ''}}">
+      <image class="portrait" mode="scaleToFill" src="{{userInfo.portrait}}" bindtap="personal"></image>
+    </view>
+    <view class="user-portrait fl" wx:else>
+      <image class="portrait" mode="scaleToFill" src="../../assets/portrait.jpg" bindtap="personal"></image>
+    </view>
+    <view class="user-info fl">
+      <text class="nickname">{{userInfo.nickname}}</text>
+      <view wx:if="{{userInfo.is_auth == 2}}" class="approve approve-pass"> 已认证 </view>
+      <view wx:elif="{{userInfo.is_auth == 1}}" class="approve"> 待审核 </view>
+      <view wx:else class="approve"> 未认证 </view>
+    </view>
+
+
+  </view>
+  <view class="row">
+    <view class="flex-item-4" bindtap="assets">
+      <image class="icon" mode="scaleToFill" src="../../assets/img/zzc.png"></image> 总资产</view>
+    <view class="flex-item-4 assets">{{all}}
+      <image class="icon" mode="scaleToFill" src="../../assets/img/bi.png" style="margin-left:0;"></image>
+    </view>
+    <view class="flex-item-4" bindtap="transaction">查看交易明细</view>
+  </view>
+  <view class="row">
+    <view class="flex-item-6" bindtap="recharge">
+      <image class="icon" mode="scaleToFill" src="../../assets/img/cz.png"></image> 充值</view>
+    <view class="flex-item-6" bindtap="withdrawal">
+      <image class="icon" mode="scaleToFill" src="../../assets/img/tx.png"></image> 提现</view>
+  </view>
+  <view class="row">
+    <view class="flex-item-6" bindtap="mystock" style="position:relative;">
+      <image class="icon" mode="scaleToFill" src="../../assets/img/gp.png"></image> 我的分享劵
+      <view class="circle {{stock==0? 'none' : 'block'}}"></view>
+
+    </view>
+    <view class="flex-item-6" bindtap="mycart">
+      <image class="icon" mode="scaleToFill" src="../../assets/img/gw.png"></image> 领券记录</view>
+  </view>
+  <view class="row">
+    <view class="flex-item-6" bindtap="sharecode">
+      <image class="icon" mode="scaleToFill" src="../../assets/img/fx.png"></image> 分享代码</view>
+    <view class="flex-item-6" bindtap="getticket">
+      <image class="icon" mode="scaleToFill" src="../../assets/img/lp.png"></image> 我要领券</view>
+  </view>
+  <view class="row">
+    <view class="flex-item-6" bindtap="bankcard">
+      <image class="icon" mode="scaleToFill" src="../../assets/img/yhk.png"></image> 我的银行卡</view>
+    <view class="flex-item-6" bindtap="authen">
+      <image class="icon" mode="scaleToFill" src="../../assets/img/rz.png"></image> 身份验证</view>
+  </view>
+  <view class="row">
+    <view class="flex-item-6" bindtap="">
+      <button open-type="contact">
+        <image class="icon" mode="scaleToFill" src="../../assets/img/dh.png"></image>在线客服</button>
+    </view>
+    <view class="flex-item-6" bindtap="setting">
+      <image class="icon" mode="scaleToFill" src="../../assets/img/sc.png"></image>设置</view>
+  </view>
+  <view class="row">
+    <view class="flex-item-6" bindtap="myOrder">
+      <image class="icon" mode="scaleToFill" src="../../assets/img/bi.png"></image>商城订单
+    </view>
+    <view class="flex-item-6" bindtap="cart">
+      <image class="icon" mode="scaleToFill" src="../../assets/img/empty.png"></image>购物车
+    </view>
+  </view>
+</view>-->
+<view class="container">
+  <view class="user pos-relative">
+    <view class="user-portrait fl" wx:if="{{userInfo.portrait != ''}}">
+      <image class="portrait"  src="{{userInfo.portrait}}"></image>
+    </view>
+    <view class="user-portrait fl" wx:else>
+      <image class="portrait"  src="../../assets/img/portrait.png"></image>
+    </view>
+    <view class="user-info fl">
+      <text class="nickname">{{userInfo.nickname}}</text>
+      <view wx:if="{{userInfo.is_auth == 2}}" class="approve approve-pass"> 已认证 </view>
+      <view wx:elif="{{userInfo.is_auth == 1}}" class="approve"> 待审核 </view>
+      <view wx:else class="approve"> 未认证 </view>
+    </view>
+    <view class="fr" style="line-height:114rpx;padding:0 60rpx;font-size:20px;color:#fff" bindtap="setting">
+    >
+    </view>
+  </view>
+  <view class="contast">
+    <view class="row"  bindtap="assets">
+      <view class="flex-item-4">
+        <image class="icon" mode="widthFix" src="../../assets/img/zzc.png"></image>
+      </view>
+      总资产
+      <view class="right">></view>
+      <view class="fr" style="color:#808080;-">{{all}}</view>
+    </view>
+     <view class="row" bindtap="getticket">
+      <view class="flex-item-4" >
+        <image class="icon" mode="widthFix" style="width:60rpx;margin:0 36rpx;" src="../../assets/img/lp.png"></image> </view>
+        我要领券
+        <view class="right" >></view>
+    </view>
+    <view class="row" style="position:relative;" bindtap="mystock">
+      <view class="flex-item-4" >
+        <image class="icon" mode="widthFix"  style="width:60rpx;margin:0 36rpx;" src="../../assets/img/gp.png"></image> </view>
+        我的分享劵
+         <view class="circle {{stock==0||stock==''? 'none' : 'block'}}"></view>
+         <view class="right" >></view>
+    </view>
+    <view class="row" bindtap="sharecode">
+      <view class="flex-item-4" >
+        <image class="icon" mode="widthFix" src="../../assets/img/fx.png"></image>
+      </view>
+      分享代码
+      <view class="right" >></view>
+    </view>
+<view class="row" bindtap="bankcard">
+      <view class="flex-item-4" >
+        <image class="icon" mode="widthFix"  style="width:60rpx;margin:0 36rpx;" src="../../assets/img/yhk.png"></image>
+      </view>
+      银行卡
+      <view class="right" >></view>
+    </view>
+    <view class="row"  bindtap="cart">
+      <view class="flex-item-4" >
+        <image class="icon" mode="widthFix" src="../../assets/img/empty.png"></image>
+      </view>
+      购物车
+      <view class="right">></view>
+    </view>
+    <view class="row" bindtap="myOrder">
+      <view class="flex-item-4">
+        <image class="icon" mode="widthFix" src="../../assets/img/bi.png"></image>
+      </view>
+      我的订单
+      <view class="right" >></view>
+    </view>
+  </view>
+</view>
+<view class="bq" style="bottom:40rpx;">Copyright 2017-2020©，</view>
+<view class="bq" style="bottom:12rpx;">All rights reserved by Amberstones®安培斯通®</view>

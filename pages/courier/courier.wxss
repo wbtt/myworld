@@ -1,0 +1,171 @@
+/**index.wxss**/
+page{
+  background-color: #fafafa;
+}
+.container {
+  padding-top: 0;
+}
+
+.pic {
+  width: 100%;
+  height: 170px;
+  position: absolute;
+
+}
+
+.person {
+  width: 100%;
+  position: relative;
+  height: 250px;
+}
+
+.user-portrait {
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
+  left: 42%;
+}
+
+.portrait {
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 50%;
+  border: 2px #e06b71 solid;
+}
+
+.dl, .zc {
+  display: inline-block;
+  background-color: #e06b71;
+  padding: 2px 5px 0 5px;
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  top: 80px;
+}
+
+.dl {
+  left: 39%;
+}
+
+.zc {
+  left: 52%;
+}
+
+.assets {
+  position: absolute;
+  font-size: 14px;
+  color: #fff;
+  top: 105px;
+  width: 100%;
+  text-align: center;
+}
+
+.ticket {
+  position: absolute;
+  font-size: 13px;
+  color: #fff;
+  top: 130px;
+  width: 100%;
+  text-align: center;
+}
+
+.detail {
+  color: #acdff5;
+}
+
+.flex-item-3 {
+  width: 24%;
+}
+
+.flex-item-3 image {
+  width: 100%;
+}
+
+.row {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 150px;
+}
+
+.flex-item-3 {
+  display: inline-block;
+}
+
+.title {
+  width: 95%;
+  color:#cf1e25;
+  line-height: 18px;
+  font-size:16px;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+}
+.detail{
+  width: 93%;
+  margin-top: 5px;
+}
+.pic_new{
+  margin-bottom: 5px;
+}
+.pic_new image{
+  width: 100%;
+  height: 135px;
+}
+.content{
+  position: absolute;
+  width: 25px;
+  height: 22px;
+  top:10px;
+  right: 10px;
+  background-color: transparent;
+  border: 0;
+}
+button::after{
+  border: 0;
+}
+.content image{
+  position: absolute;
+  width: 25px;
+  height: 22px;
+  top:0px;
+  right: 0px;
+}
+.name{
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+}
+.block{
+  display: block;
+}
+.time, .tit {
+  display: inline-block;
+}
+
+.time {
+  color: #98989a;
+  width: 25%;
+  vertical-align: middle;
+}
+.new{
+  margin-bottom:20rpx;
+}
+.tit {
+  width: 75%;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.banben{
+  position: absolute;
+  color: #fff;
+  font-size: 12px;
+  left:10rpx;
+}

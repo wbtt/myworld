@@ -1,0 +1,83 @@
+/* pages/setting/setting.wxss */
+page{
+  
+}
+.container {
+  padding-top: 0rpx;
+  font-size: 14px;
+  background-color: #EEEEEE;
+}
+
+.action-item {
+  background: #fff;
+  width: 90%;
+  padding:0 5%;
+  line-height: 40px;
+  margin-top: 5px;
+}
+
+.action {
+  float: right;
+}
+.out{
+  background-color: #cf1e25;
+  color: #fff;
+  width: 80%;
+  line-height: 2.2;
+  font-size: 18px;
+  margin-top: 20px;
+}
+text{
+  color: #fff;
+}
+.icon {
+  width: 32px;
+  height: 32px;
+  margin-right:5px;
+  vertical-align: middle;
+}
+.user-portrait {
+  margin-left:20px;
+width:25%;
+overflow:hidden;
+
+}
+.user-info{
+  line-height: 70px;
+}
+.user {
+  width: 100%;
+  overflow: hidden;
+  background-color: #cf1e25;
+  padding: 20px 0;
+}
+.portrait {
+width:70px;
+height:70px;
+display:block;
+border-radius:50%;
+border:2px #e06b71 solid;
+
+}
+.right{
+  width: 10px;
+  height: 15px;
+  vertical-align: middle;
+}
+button::after{
+  border: 0;
+}
+.content{
+  border: 0;
+  line-height: 2.9;
+  font-size:14px;
+  text-align:left;
+  width: 100%;
+  border-radius:0; 
+}
+image {
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+  border-radius: 5%;
+}

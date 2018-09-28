@@ -1,0 +1,12 @@
+<!--pages/collection/collection.wxml-->
+<view class="container">
+  <view class="colle">
+  <image mode="widthFix" src="../../assets/img/sc1.png" class="fr"></image>
+    <view class="title">
+      China's Hebei cuts 14 million tons of steel capacity
+    </view> 
+    <view class="type" >BUSINESS</view>
+    <view class="time">November 22, 2016</view>
+    
+  </view>
+</view>

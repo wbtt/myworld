@@ -1,0 +1,130 @@
+<view class="container">
+  <!--交易规则1-->
+  <!-- <view class="b1" hidden="{{flag1}}">
+    <view class="particulars">
+      <view class="header">
+        介绍1
+        <icon class="fr" type="clear" size="20" bindtap="b1" />
+      </view>
+      <view class="minute">
+        大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库
+      </view>
+    </view>
+  </view> -->
+  <!--交易规则2-->
+  <!-- <view class="b2" hidden="{{flag2}}">
+    <view class="particulars">
+      <view class="header">
+        介绍2
+        <icon class="fr" type="clear" size="20" bindtap="b2" />
+      </view>
+      <view class="minute">
+        大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库大家啊经典款拉丝机恐龙当家奥斯卡来得及卡拉数据库
+      </view>
+    </view>
+  </view> -->
+
+  <view class="bar" bindtap="tabFun">
+    <view wx:for="{{ay}}" class="bar1 {{tabArr.curHdIndex=='1'? 'active' : ''}}" data-id="1" wx:if="{{item.cid==1}}">{{item.cname}}</view>
+    <view wx:for="{{ay}}" class="bar2 {{tabArr.curHdIndex=='2'? 'active' : ''}}" data-id="2" wx:if="{{item.cid==2}}">{{item.cname}}</view>
+
+  </view>
+   <view wx:for="{{ay}}" style="width:100%;">
+    <view class="search bar{{item.cid}} {{tabArr.curBdIndex==item.cid? 'active' : ''}}">
+      <icon type="search" class="iconsec" size="18" />
+      <input confirm-type="done" bindconfirm="bindInput" name="sear" data-id="{{item.cid}}" bindblur="mobileInputEvent"/>
+      <button class="btn_search" bindtap="search" data-id="{{item.cid}}">搜索</button>
+       <!-- <icon type="info" size="20" color="#fff" style="vertical-align: middle;" bindtap="a2" />  -->
+    </view>
+  </view> 
+  <!--成品-->
+  <view class="detail {{tabArr.curBdIndex=='1'? 'active' : ''}}">
+
+    <view class="row">
+      <view class="flex-item-3 left">
+        <view>{{title.name1}}
+        </view>
+      </view>
+      <view class="flex-item-2">
+        <view>{{title.name2}}</view>
+      </view>
+      <view class="flex-item-2">
+        <view>{{title.name3}}</view>
+      </view>
+      <view class="flex-item-2">
+        <view>{{title.name4}}</view>
+      </view>
+
+      <view class="flex-item-2">
+        <view>{{title.name5}}</view>
+      </view>
+    </view>
+    <view class="row main" wx:for="{{array}}" bindtap="viewDetail" data-id="{{item.pid}}">
+      <view class="flex-item-3 left">
+        <view>{{item.product_name}}</view>
+        <view style="font-size:12px;color:#BFBFBF;">{{item.product_no}}</view>
+      </view>
+      <view class="flex-item-2">
+        <view class="equality">{{item.msprice}}</view>
+      </view>
+      <view class="flex-item-2">
+        <view wx:if="{{item.new > item.closeing_price}}" class="top">{{item.new}}</view>
+        <view wx:elif="{{item.new < item.closeing_price}}" class="down">{{item.new}}</view>
+        <view wx:else class="equality"> {{item.new}} </view>
+      </view>
+      <view class="flex-item-2">
+        <view wx:if="{{item.increase>0}}" class="top">{{item.increase}}%</view>
+        <view wx:elif="{{item.increase<0}}" class="down">{{item.increase}}%</view>
+        <view wx:else class="equality">{{item.increase}}%</view>
+      </view>
+      <view class="flex-item-2">
+        <view class="equality">{{item.closeing_price}}</view>
+      </view>
+    </view>
+  </view>
+  <!--原料-->
+  <view class="detail {{tabArr.curBdIndex=='2'? 'active' : ''}}">
+
+    <view class="row">
+      <view class="flex-item-3 left">
+        <view>{{title.name1}}
+        </view>
+      </view>
+      <view class="flex-item-2">
+        <view>{{title.name2}}</view>
+      </view>
+      <view class="flex-item-2">
+        <view>{{title.name3}}</view>
+      </view>
+      <view class="flex-item-2">
+        <view>{{title.name4}}</view>
+      </view>
+      <view class="flex-item-2">
+        <view>{{title.name5}}</view>
+      </view>
+    </view>
+    <view class="row main" wx:for="{{brray}}" bindtap="viewDetail" data-id="{{item.pid}}">
+      <view class="flex-item-3 left">
+        <view>{{item.product_name}}</view>
+        <view style="font-size:12px;color:#BFBFBF;">{{item.product_no}}</view>
+      </view>
+      <view class="flex-item-2">
+        <view class="equality">{{item.msprice}}</view>
+      </view>
+      <view class="flex-item-2">
+        <view wx:if="{{item.new > item.closeing_price}}" class="top">{{item.new}}</view>
+        <view wx:elif="{{item.new < item.closeing_price}}" class="down">{{item.new}}</view>
+        <view wx:else class="equality"> {{item.new}} </view>
+      </view>
+      <view class="flex-item-2">
+        <view wx:if="{{item.increase>0}}" class="top">{{item.increase}}%</view>
+        <view wx:elif="{{item.increase<0}}" class="down">{{item.increase}}%</view>
+        <view wx:else class="equality">{{item.increase}}%</view>
+      </view>
+      <view class="flex-item-2">
+        <view class="equality">{{item.closeing_price}}</view>
+      </view>
+    </view>
+  </view>
+
+</view>

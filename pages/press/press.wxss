@@ -1,0 +1,119 @@
+/* pages/press/press.wxss */
+page {  
+  display: block;  
+  min-height: 100%;  
+  background-color: #fff;  
+  position: relative;
+}  
+.container {
+  padding-top: 0rpx;
+  font-size: 14px;
+  background-color: #fff;
+}
+.newimage{
+  padding-bottom:100rpx;
+
+  width: 100%;
+}
+.newimage image{
+     height: 0;
+     width: 100%;
+}
+view{
+  color: #000;
+}
+.title{
+  font-size: 19px;
+  padding: 20rpx;
+  padding-bottom:140rpx;
+  word-break:break-all;
+}
+.title text{
+  font-size: 14px;
+}
+.content{
+  color:  rgba(153,153,153,1);
+  padding:20rpx;
+  position: fixed;
+  bottom: 0;
+  width:95%;
+  background-color: #fff;
+}
+.operate{
+  width: 100%;
+  text-align: right;
+  margin-top: 25rpx;
+}
+.operate image{
+  width: 48rpx;
+  height: 48rpx;
+ margin-right: 20rpx;
+ margin-left: 15rpx;
+vertical-align:middle;
+}
+.button{
+  margin-left: 16rpx;
+    width: 100rpx;
+    line-height: 2.2;
+    padding: 0;
+     display: inline-block;
+     font-size:12px;
+     vertical-align: middle;
+     background-color: #cf1e25;
+     color:#fff;
+}
+button::after{
+  border:0;
+}
+textarea{
+  width: 75%;
+  height: 60rpx;
+  padding: 0 20rpx;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 60rpx;
+  font-size:15px;
+  border-bottom: 1px solid #000;
+}
+.block{
+  display: block;
+}
+.liuyan{
+  background-color:#cf1e25;
+  color: #fff;
+  line-height: 60rpx;
+}
+.person{
+  height:60rpx;
+}
+.name{
+  color:#87C1FB;
+  font-size: 15px;
+}
+.time{
+  font-size: 12px;
+  color:#888889;
+}
+.nr{
+  color: #3C3F44;
+}
+.answer{
+  background-color: #F7F7F2;
+  border-radius:5px; 
+  padding-left: 53rpx;
+}
+.header{
+  color: #FC6B02;
+}
+.tx{
+  width: 9%;
+  height:100%;
+  border-radius:100rpx; 
+  margin-right: 10rpx;
+}
+.top{
+  padding-bottom: 100%;
+}
+.false{
+   padding-bottom: 20rpx;
+}

@@ -1,0 +1,149 @@
+/* pages/markdetail/markdetail.wxss */
+
+.container {
+  padding-top: 20rpx;
+  font-size: 14px;
+  height: 100%;
+}
+
+.org {
+  color: #f96;
+}
+
+.row {
+  clear: left;
+  width: 95%;
+  overflow: hidden;
+  text-align: left;
+  border-top: 1px solid #D8D8D8;
+  border-bottom: 1px solid #D8D8D8;
+  padding: 15rpx 0;
+  margin: 0 10px;
+}
+
+.flex-item-3 {
+  float: left;
+  width: 25%;
+  overflow: hidden;
+  color: #09c;
+  font-size: 12px;
+}
+
+.flex-item-4 {
+  float: left;
+  width: 30%;
+  overflow: hidden;
+  font-size: 13px;
+  text-align: center;
+  padding: 0 10rpx;
+}
+.flex-item-4 view{
+  line-height: 20px;
+}
+.num{
+  color: #09c;
+  font-size:16px;
+
+}
+.flex-item-4:nth-child(2) {
+  border-left: 1px solid #D8D8D8;
+  border-right: 1px solid #D8D8D8;
+}
+
+.flex-item-6 {
+  float: left;
+  width: 50%;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.row text {
+  display: inline-block;
+  /*margin-right: 10px;*/
+}
+
+.deal {
+  /*height: 140px;*/
+  border-bottom: 1px solid #ebefed;
+}
+
+.chengjiao {
+  width: 100%;
+  /*border-bottom: 5px solid #EBEFED;
+  border-top:5px solid #EBEFED; */
+}
+
+image {
+  width: 100%;
+  height: 100%;
+}
+
+.market {
+  padding: 5rpx 20rpx;
+  width: 95%;
+}
+
+.volume {
+  width: 100%;
+}
+
+.cj {
+  border-bottom: 1px solid #ebefed;
+}
+
+.type {
+  width: 100%;
+  padding-bottom: 10rpx;
+  margin-bottom: 10rpx;
+  text-align: center;
+}
+
+.fxpj {
+  width: 100%;
+  border-bottom: 5px solid #ebefed;
+}
+
+.level {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10rpx 20rpx;
+}
+
+button {
+  font-size: 17px;
+  line-height: 2.8;
+  background-color: #cf1e25;
+  color: #fff;
+  width: 90%;
+  margin: 20rpx 0;
+}
+
+.now {
+  font-size: 26px;
+  color:red;
+}
+.detail{
+  width: 100%;
+  text-align: center;
+}
+.paper{
+  width: 100%;
+  border-bottom: 5px solid #E6E5EB;
+  padding: 10px 0;
+}
+.mingc,
+.describe{
+  margin-left: 10px; 
+}
+.mingc{
+  font-size: 16px;
+  border-bottom:1px solid #EDEDF0;
+  padding-bottom: 10px;
+}
+.describe{
+  padding-top: 10px;
+  padding-right: 20rpx; 
+}
+.out{
+  background-color: gray;
+}

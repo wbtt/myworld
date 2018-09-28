@@ -1,0 +1,189 @@
+/* pages/mystock/mystock.wxss */
+
+/*.container {
+  padding-top: 0rpx;
+}
+.row {
+  clear: left;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ADADAD;
+  text-align: left;
+}
+.row view{
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+}
+button{
+  width: 50px;
+  height: 26px;
+  line-height: 25px;
+  text-align: center;
+  border: 1px solid #FF3300;
+  color: #FF3300;
+  display: inline-block;
+  font-size: 14px;
+}
+.flex-item-4 {
+  float: left;
+  width: 26%;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+}
+.flex-item-3{
+  float: left;
+  width: 20%;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+}*/
+
+.container {
+  padding-top: 5rpx;
+  padding-bottom: 0;
+  font-size: 14px;
+}
+
+.top {
+  height: 50rpx;
+  width: 100%;
+  background-color: #cf1e25;
+}
+
+.detail {
+  width: 90%;
+  padding: 25rpx 6rpx 8rpx 6rpx;
+  line-height: 25px;
+  /*background: #eee;*/
+  box-shadow: 0px 0px 10rpx #dfdfdf;
+  border-radius: 5rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+
+.img {
+  /*width: 119px;
+  height: 119px;*/
+  float: left;
+  /*margin-right: 5%;*/
+}
+
+.particular {
+  text-align: right;
+}
+
+image {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  color: #666;
+}
+
+.describe {
+  margin-top: 5rpx;
+  color: #c00;
+  font-size: 12rpx;
+}
+
+.return {
+  color: #c00;
+  font-size: 12rpx;
+  border: 1rpx solid #c00;
+  display: inline-block;
+  padding: 0 5rpx;
+  margin-top: 5rpx;
+}
+
+.price {
+  margin-top: 5rpx;
+  line-height: 25rpx;
+}
+
+.price view {
+  display: inline-block;
+}
+
+.money {
+  color: #f00;
+  font-size: 20rpx;
+}
+
+.num {
+  float: right;
+  margin-right: 20rpx;
+}
+
+button {
+  width: 135rpx;
+  height: 45rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border: 1rpx solid #c9151d;
+  color: #c9151d;
+  display: inline-block;
+  font-size: 14px;
+  float: right;
+  border-radius: 0;
+  background-color: #fff;
+  margin-right: 25rpx;
+  margin-top: 10rpx;
+}
+
+button::after {
+  border-radius: 0;
+  border: 0;
+}
+
+.grey[plain] {
+  color: #666;
+  border: 1rpx solid #666;
+}
+
+.orange[plain] {
+  color: #f30;
+  border: 1rpx solid #f30;
+}
+
+.state text {
+  color: #f30;
+}
+
+
+.row {
+  width: 100%;
+  overflow: hidden;
+}
+
+.flex-item-6 {
+  float: left;
+  width: 46%;
+  line-height: 66rpx;
+  height:66rpx;
+  border-bottom: 1rpx solid #dcdcdd;
+  overflow: hidden;
+  border-left: 1rpx solid #dcdcdd;
+  padding: 0 10rpx;
+}
+.flex-item-6:nth-child(even){
+   border-right: 1rpx solid #dcdcdd; 
+   width: 47%;
+}
+.fl {
+  color: #4d4d4d;
+}
+
+.fr {
+  color: #808080;
+}
+.red{
+  color:#cf1e25;
+}
+.green{
+  color:#48C23D;
+}

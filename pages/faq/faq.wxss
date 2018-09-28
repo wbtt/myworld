@@ -1,0 +1,60 @@
+/* pages/faq/faq.wxss */
+
+.container {
+  padding-top: 0rpx;
+  font-size: 14px;
+  white-space:pre-line;
+}
+
+.belongs, .data, .describe {
+  width: 95%;
+  color: #9a9a9a;
+  padding: 0 10px;
+  font-size: 13px;
+}
+
+.data {
+  margin-bottom: 10px;
+}
+
+.image, image {
+  width: 100%;
+}
+
+.end {
+  padding: 0 10px;
+  margin-top: 30px;
+}
+
+.user {
+  width: 100%;
+  overflow: hidden;
+  height: 45px;
+  background-color: #cf1e25;
+}
+
+.user-portrait {
+  margin-left: 20px;
+  width: 25%;
+  overflow: hidden;
+}
+
+.user-info {
+  line-height: 70px;
+  width: 55%;
+}
+
+._content {
+  background-color: transparent;
+  border: 0;
+  float: right;
+}
+
+button::after {
+  border: 0;
+}
+
+._content image {
+  width: 25px;
+  vertical-align: middle;
+}

@@ -1,0 +1,126 @@
+<!--pages/markdetail/markdetail.wxml-->
+<!--<view class="container">
+  <view class="number">
+    <view class="org fl" style="font-size:40px;width:50%;">{{obj.new}}</view>
+    <view class="org fr" style="line-height:26px;width:20%;text-align:right">+{{obj.drop_range}}</view>
+    <view class="org fr" style="line-height:26px;width:20%;text-align:right">+{{obj.increase}}%</view>
+    <view class="fr" style="line-height:26px;width:50%;text-align:right;">{{obj.add_time}}</view>
+  </view>
+  <view class="market">
+    <view class="earnings row">
+      <view class="flex-item-3">
+        <text>今开</text> {{obj.start_price}}</view>
+      <view class="flex-item-3">
+        <text>最高</text> {{obj.max_price}}</view>
+      <view class="flex-item-3">
+        <text>昨收</text> {{obj.closeing_price}}</view>
+      <view class="flex-item-3">
+        <text>最低</text> {{obj.min_price}}</view>
+      <!--<view class="flex-item-4">
+        <text>成交量</text> 2498237</view>-->
+<!--<view class="flex-item-4">
+        <text>总市值</text> 57.90亿</view>-->
+<!--</view>
+  </view>
+  <view class="chengjiao">
+    <view class="deal">-->
+<!--<image src="../../assets/img/jy1.png"></image>-->
+<!--<canvas canvas-id="time-sharing" class="stage" style="width: 100%; height: 200px">
+      </canvas>-->
+
+<!--</view>
+    <view class="volume">
+      <view class="cj row">
+        <view class="flex-item-6">成交量</view>
+        <view class="flex-item-6" style="text-align:right;" data-volume="{{obj.volume}}">{{obj.volume}}</view>
+      </view>
+      <view class="detail">
+        <image src="../../assets/img/cj2.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="fxpj">
+    <view class="title">
+      风险评级
+    </view>
+    <view class="level">-->
+<!--<view class="grade"> R1级（低风险）</view>-->
+<!--{{info.risk_description}} 谨慎型，本金风险极低，收益浮动相对较小。
+    </view>
+  </view>
+  <button bindtap="sell" data-id="{{obj.pid}}">立即卖出</button>
+</view>-->
+<view class="container">
+  <view class="detail">
+    <view class="type">
+      <view class="name" style="font-size:15px;">
+        {{info.product_name}}
+      </view>
+      <view class="title">
+        {{info.product_no}}
+      </view>
+      <view class="now">
+        {{obj.new}}
+      </view>
+      <view class="time">
+        {{obj.add_time}}
+      </view>
+    </view>
+
+    <view class="row">
+      <view class="flex-item-4">
+        <!--开盘价-->
+        <view class="opening">开盘价</view>
+        <view class="opening_num num">{{obj.msprice}}</view>
+      </view>
+      <view class="flex-item-4">
+        <!--涨幅-->
+        <view class="gains">涨幅</view>
+        <view class="gains_num num"> {{obj.increase}}%</view>
+      </view>
+      <view class="flex-item-4">
+        <!--涨跌-->
+        <view class="fall">最高价</view>
+        <view class="fall_num num">{{obj.max_price}}</view>
+      </view>
+    </view>
+    <view class="row">
+      <view class="flex-item-4">
+        <!--昨收-->
+        <view class="closed">昨收</view>
+        <view class="closed_num num">{{obj.closeing_price}}</view>
+      </view>
+      <view class="flex-item-4">
+        <!--成交量-->
+        <view class="volume">成交额</view>
+        <view class="volume_num num">{{obj.volume}}</view>
+      </view>
+      <view class="flex-item-4">
+        <!--成交额-->
+        <view class="turnover">最低价</view>
+        <view class="turnover_num num">{{obj.min_price}}</view>
+      </view>
+    </view>
+  </view>
+  <!--产品简述-->
+  <view class="paper">
+    <view class="mingc">
+      产品简述
+    </view>
+    <view class="describe">
+      {{info.risk_product}}
+    </view>
+  </view>
+  <!--风险评级-->
+  <view class="paper">
+    <view class="mingc">
+      详细说明
+    </view>
+    <view class="level">
+<view class="grade"> {{info.risk_description}}</view>
+   {{info.rating}}
+    </view>
+  </view>
+  <button bindtap="buy" data-id="{{obj.pid}}">立即买入</button>
+  <button bindtap="sell" data-id="{{obj.pid}}" class="out">立即卖出</button>
+</view>

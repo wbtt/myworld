@@ -1,0 +1,16 @@
+<view class="container">
+<view style="width:90%;font-size:12px;color:#808080;margin-bottom:10px;">为保证资金安全，请先验证身份</view>
+  <form class="input-group" bindsubmit="formSubmit">
+    <view class="input-row">
+      <label class="flex-item fl">姓名</label>
+      <input type="text" class="flex-item fr" name="phone" maxlength="11" placeholder="请输入姓名" placeholder-class="place" />
+    </view>
+    <view class="input-row">
+      <label class="flex-item fl">身份证号</label>
+      <input type="idcard" class="flex-item fr" name="password" maxlength="25" placeholder="请输入身份证号" placeholder-class="place" />
+    </view>
+    <view class="button-row">
+      <button type="default" formType="submit"> 提交 </button>
+    </view>
+  </form>
+</view>

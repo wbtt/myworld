@@ -1,0 +1,58 @@
+/* pages/transaction/transaction.wxss */
+.container {
+  padding-top: 10rpx;
+  padding-bottom: 0;
+  font-size: 14px;
+}
+.tran{
+  width: 100%;
+}
+.time{
+  height:20px;
+  padding-left:20px;
+  padding-right: 10px;
+  border-bottom: 2px solid #EBEBEB;
+  border-top: 2px solid #EBEBEB;
+}
+.time view{
+  display: inline-block;
+}
+.year{
+  float: left;
+}
+.choose{
+  float: right;
+}
+.detail{
+  padding:0 10px;
+}
+.row{
+  clear: both;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 2px solid #EBEBEB;
+  padding: 10px 0;
+}
+.row:last-child{
+  border-bottom:0;
+}
+.row view{
+  display: inline-block;
+}
+.rechange{
+  width: 30%;
+}
+.money{
+  width:30%;
+}
+.shijian{
+  width:40%;
+  text-align: right;
+  color:#9B9B9B;
+}
+.red{
+  color:#FF708D;
+}
+.green{
+  color:#33CC33;
+}

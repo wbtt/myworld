@@ -1,0 +1,20 @@
+<!--pages/pay/pay.wxml-->
+<view>
+  <form class="input-group" bindsubmit="formSubmit">
+    <view style="color:#9ACD32; text-algin:center;">
+      <text>该笔订单支付金额为：</text>
+    </view>
+    <view>
+      <text style="color:#f00;font-size:50px">{{money}}</text>
+      <text>元</text>
+    </view>
+
+    
+
+    <button loading="{{loading}}" disabled="{{disabled}}" formType="submit" bindtap="paynow">立即支付</button>
+  </form>
+
+    <view class="classname">
+      {{orderrepayinfo}}
+    </view>
+</view>

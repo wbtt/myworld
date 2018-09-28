@@ -1,0 +1,93 @@
+/* pages/forget/forget.wxss */
+.container {
+  padding-top: 0rpx;
+}
+
+.input-group {
+  margin-top: 20px;
+  width: 80%;
+  font-size: 12px;
+  color: #ccc;
+}
+
+.input-row {
+  clear: left;
+  height: 50px;
+  flex-direction: row;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.input-row label, .input-row input {
+  height: 49px;
+  line-height: 49px;
+}
+
+.input-row label {
+  width: 15%;
+  /*background: red;*/
+}
+
+.input-row input {
+  font-size: 18px;
+  width: 62%;
+  /*background: green;*/
+}
+
+.place {
+  color: #ccc;
+  font-size: 13px;
+}
+
+.forgot-pwd {
+  text-align: right;
+  line-height: 30px;
+}
+
+.button-row {
+  margin-top: 20px;
+}
+
+.button-row button {
+  height: 33px;
+  line-height: 33px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  border: 0;
+  background: #ccc;
+  color: #fff;
+}
+
+.button-row button:first-child {
+  background: #cf1e25;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right:5px;
+  vertical-align: middle;
+}
+.code{
+  position: absolute;
+  top:13px;
+  right: 10px;
+  color: #CCCCCC;
+  border: 1px solid #CCCCCC;
+  border-radius:10%; 
+  padding: 2px 20px;
+}
+.phone_code{
+  height: 33px;
+  line-height: 33px;
+  margin-bottom: 20px;
+  border: 0;
+  background: #ccc;
+  color: #fff;
+  width: 40%;
+  position: absolute;
+  right: 0;
+  top:9px;
+  font-size: 12px;
+}
+button[disabled][type="default"], wx-button[disabled]:not([type]) {
+  background: #ccc;
+}

@@ -1,0 +1,102 @@
+/* pages/news/news.wxss */
+
+.container {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 28rpx;
+}
+
+.new {
+  width: 97%;
+  font-size: 30rpx;
+}
+
+image {
+  width: 100%;
+  height: 340rpx;
+}
+
+.row, .section {
+  clear: both;
+  width: 100%;
+  overflow: hidden;
+}
+
+.section {
+  padding-left: 40rpx;
+}
+
+.sechead {
+  width: 90%;
+  padding: 20rpx 0;
+}
+
+.flex-item-6 {
+  width: 50%;
+  overflow: hidden;
+  float: left;
+}
+
+.bar {
+  width: 90%;
+  background-color: #e4e4e4;
+  font-size: 30rpx;
+  border-radius: 5px;
+}
+
+.bar .active {
+  background-color: #cf1e25;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.bar1, .bar2,.bar3 {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  padding: 10rpx 0;
+}
+
+.detail {
+  width: 100%;
+  display: none;
+  margin-top: 20rpx;
+}
+
+.detail.active {
+  display: block;
+}
+
+.time, .title {
+  display: inline-block;
+}
+
+.time {
+  color: #98989a;
+  width: 30%;
+  vertical-align: middle;
+}
+
+.title {
+  width: 68%;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.pic_title {
+  position: absolute;
+  bottom: 8rpx;
+/*background-color: #98989a;*/
+  background:rgba(152,152,154,0.7);
+  width: 100%;
+  padding: 10rpx 0;
+}
+.pic_title view{
+  margin:0 20rpx;
+    overflow: hidden;
+      color:#fff;
+}
+.pic_new {
+  width: 100%;
+   position: relative;
+}

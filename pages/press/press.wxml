@@ -1,0 +1,52 @@
+<!--pages/press/press.wxml-->
+
+<view class="container">
+  <!--<view class="operate">
+    <text class="nub">{{like_number}}</text>
+    <!--点赞次数-->
+  <!-- <image src="../../assets/img/zan.png" bindtap="tapName" data-id="{{array.news_id}}"></image>
+    <image src="{{srcxiang}}" bindtap="xiangName" data-newid="{{array.news_id}}"></image>
+    <button open-type="share" style="background:transparent;display:inline-block;padding:0;vertical-align:middle;line-height:0;">
+      <image src="../../assets/img/fenxiang.png"></image>
+    </button>
+  </view>-->
+  <view class="newimage">
+    <image src="http://wx.yidaihuo.cn/{{array.list_img[0]}}" mode="widthFix"></image>
+    <view class="title" style="padding-bottom:10px;" wx:if="{{array.content1!=''}}" block>
+      <text>{{array.content1}}</text>
+    </view>
+    <image src="http://wx.yidaihuo.cn/{{array.list_img[1]}}" mode="widthFix"></image>
+    <view class="title" style="padding-bottom:10px;" wx:if="{{array.content2!=''}}" block>
+      <text>{{array.content2}}</text>
+    </view>
+    <image src="http://wx.yidaihuo.cn/{{array.list_img[2]}}" mode="widthFix"></image>
+    <view class="title" style="padding-bottom:10px;" wx:if="{{array.content3!=''}}" block>
+      <text>{{array.content3}}</text>
+    </view>
+    <!--提交文本框-->
+    <view class="content {{height ? 'top' : 'down'}}">
+      <form bindsubmit="formReset" data-text="{{array.news_id}}">
+        <!-- <textarea name="textname" style="height:{{maxheight}}rpx;" placeholder="请输入您的评论" fixed="true" bindfocus="bindfocus" bindblur="bindblur" auto-height="{{autoheight}}" value="{{content}}" /> -->
+         <textarea name="textname" style="height:{{maxheight}}rpx;" placeholder="请输入您的评论" fixed="true" bindfocus="bindfocus" bindblur="bindblur" auto-height="{{autoheight}}" value="{{content}}" bindlinechange="linechange"/>
+        <button formType="submit" class="button" disabled="{{form}}">提交</button>
+      </form>
+    </view>
+  </view>
+</view>
+<view class="title" wx:if="{{newlist!=''}}" block>
+  <view class="liuyan">留言区：</view>
+  <view wx:for="{{newlist}}" style="border-bottom:1px solid #EEEEEE;line-height:60rpx;font-size:14px;font-family:'微软雅黑';padding:20rpx 0;">
+    <view class="person">
+      <image wx:if="{{item.portrait==''}}" src="../../assets/img/portrait.png" class="tx fl"></image>
+      <image wx:else src="{{item.portrait}}" class="tx fl"></image>
+      <view class="fl name">{{item.nickname}}</view>
+    </view>
+    <view class="classname">{{item.content}} </view>
+    <view class="time">{{item.add_time}}</view>
+     <view wx:if="{{item.content1!=''}}" class="answer block">
+      <view class="header">官方回复</view> 
+      <view class="body">{{item.content1}}</view>
+      <view class="time">{{item.time}}</view>
+    </view> 
+  </view>
+</view>

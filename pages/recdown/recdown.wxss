@@ -1,0 +1,64 @@
+/* pages/recdown/recdown.wxss */
+.prompt{
+  background-color: #cf1e25;
+  padding: 20px 30px;
+  height: 80px;
+}
+.prompt view{
+  color: #fff;
+  font-size: 16px;
+}
+.rmb{
+  margin-left:25px;
+  margin-right: 5px;
+}
+.amount .rmb,
+.amount .yuan,
+.amount .num{
+  color: #FF0A3B;
+  font-size: 16px;
+}
+.amount1 .rmb,
+.amount1 .yuan,
+.amount1 .num{
+  color: #FF9966;
+  font-size: 16px;
+}
+.yuan{
+  margin-left: 5px;
+}
+.amount{
+  padding: 5px 0px; 
+  border-bottom: 2px solid #EBEBEB;
+  font-size: 14px;
+}
+.amount1{
+  padding: 10px 0px; 
+  font-size: 14px;
+}
+.pay{
+  padding:0 25px;
+  font-size: 14px;
+}
+image{
+  width: 75px;
+  height:75px;
+  vertical-align: middle;
+  margin-right: 40px;
+}
+.icon {
+  width: 32px;
+  height: 32px;
+  margin-right:5px;
+}
+.pay text{
+  vertical-align: middle;
+}
+button{
+  background-color: #cf1e25;
+  color:#fff;
+  width: 90%;
+  line-height: 2;
+  margin-top: 10px;
+  font-size: 16px;
+}

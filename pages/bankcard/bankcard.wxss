@@ -1,0 +1,114 @@
+/* pages/bankcard/bankcard.wxss */
+.container {
+  padding-top: 20rpx;
+}
+.message{
+  width: 95%;
+  border-bottom: 2px solid #EBEBEB;
+  font-size: 17px;
+  padding:5px 10px;
+  
+}
+.card{
+  width: 95%;
+  /*border-bottom: 2px solid #EBEBEB;*/
+  font-size: 17px;
+  height:135px;
+  position: relative;
+  background: transparent;
+}
+.card view{
+  font-size: 18px;
+  width:100%;
+}
+
+.number{
+  color:#fff;
+  text-align: center;
+  float: right;
+  position: absolute;
+   top:55%;
+  left: 1%;
+}
+button{
+  background-color:#cf1e25;
+  color:#fff;
+  margin: 10px 15px;
+  line-height: 2.2;
+  width: 90%;
+  font-size: 18px;
+}
+.button-hover {
+  background-color: #cf1e25;
+  color:#fff;
+}
+image{
+  width: 40%;
+  height: 8px;
+  margin-right: 30px;
+}
+.name{
+  position: absolute;
+  top:25%;
+  left: 20%;
+  color: #fff;
+}
+.card .cxk{
+  color: #fff;
+  position: absolute;
+  top:43%;
+  left: 20%;
+  font-size: 12px;
+}
+.gsyh{
+  background: url('https://wx.yidaihuo.cn/Public/images/gsyh.png') no-repeat;
+  background-size:100% auto;
+}
+.gdyh{
+  background: url('https://wx.yidaihuo.cn/Public/images/gdyh.png') no-repeat;
+  background-size:100% auto;
+}
+.jsyh{
+  background: url('https://wx.yidaihuo.cn/Public/images/jsyh.png') no-repeat;
+  background-size:100% auto;
+}
+.jtyh{
+  background: url('https://wx.yidaihuo.cn/Public/images/jtyh.png') no-repeat;
+  background-size:100% auto;
+}
+.msyh{
+  background: url('https://wx.yidaihuo.cn/Public/images/msyh.png') no-repeat;
+  background-size:100% auto;
+}
+.nyyh{
+  background: url('https://wx.yidaihuo.cn/Public/images/nyyh.png') no-repeat;
+  background-size:100% auto;
+}
+.payh{
+  background: url('https://wx.yidaihuo.cn/Public/images/payh.png') no-repeat;
+  background-size:100% auto;
+}
+.pfyh{
+  background: url('https://wx.yidaihuo.cn/Public/images/pfyh.png') no-repeat;
+  background-size:100% auto;
+}
+.xyyh{
+  background: url('https://wx.yidaihuo.cn/Public/images/xyyh.png') no-repeat;
+  background-size:100% auto;
+}
+.yzyh{
+  background: url('https://wx.yidaihuo.cn/Public/images/yzyh.png') no-repeat;
+  background-size:100% auto;
+}
+.zgyh{
+  background: url('https://wx.yidaihuo.cn/Public/images/zgyh.png') no-repeat;
+  background-size:100% auto;
+}
+.zsyh{
+  background: url('https://wx.yidaihuo.cn/Public/images/zsyh.png') no-repeat;
+  background-size:100% auto;
+}
+.zxyh{
+  background: url('https://wx.yidaihuo.cn/Public/images/zxyh.png') no-repeat;
+  background-size:100% auto;
+}

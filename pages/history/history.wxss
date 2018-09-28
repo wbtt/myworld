@@ -1,0 +1,131 @@
+/* pages/history/history.wxss */
+
+.container {
+  padding-top: 5rpx;
+  padding-bottom: 0;
+  font-size: 14px;
+}
+
+.bar {
+  width: 100%;
+  background-color: #e4e4e4;
+  font-size: 15px;
+}
+
+.bar .active {
+  background-color: #359AFF;
+  color: #fff;
+}
+
+.bar1, .bar2,.bar3 {
+  display: inline-block;
+  width: 33.33%;
+  text-align: center;
+  padding: 5px 0;
+
+}
+
+.detail {
+  width: 90%;
+  padding: 10px 0;
+  padding-right: 0;
+  display: none;
+  line-height: 25px;
+  /*background: #eee;*/
+  border-bottom:2px solid #EAEAEA;
+}
+
+.img {
+  width: 119px;
+  height: 119px;
+  float: left;
+  margin-right: 5%;
+}
+
+.particular {
+  text-align: right;
+}
+
+image {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  color: #666;
+}
+
+.describe {
+  margin-top: 5px;
+  color: #c00;
+  font-size: 12px;
+}
+
+.return {
+  color: #c00;
+  font-size: 12px;
+  border: 1px solid #c00;
+  display: inline-block;
+  padding: 0 5px;
+  margin-top: 5px;
+}
+
+.price {
+  margin-top: 5px;
+  line-height: 25px;
+}
+
+.price view {
+  display: inline-block;
+}
+
+.money {
+  color: #f00;
+  font-size: 20px;
+}
+
+.num {
+  float: right;
+  margin-right: 20px;
+}
+
+.state {
+  border-top: 2px solid #eaeaea;
+  margin-right: 10px;
+  margin-top: 15px;
+  padding-top: 5px;
+  line-height: 32px;
+}
+
+.state button {
+  display: inline-block;
+  width: 90px;
+  font-size: 13px;
+  float: right;
+}
+
+button {
+  margin-left: 5px;
+}
+
+.grey[plain] {
+  color: #666;
+  border: 1px solid #666;
+}
+
+.orange[plain] {
+  color: #f30;
+  border: 1px solid #f30;
+}
+
+.state text {
+  color: #f30;
+}
+
+.detail.active {
+  display: block;
+}
+.refused{
+  border-top:2px solid #EAEAEA;
+  color:#f00;
+}

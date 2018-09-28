@@ -1,0 +1,9 @@
+<!--pages/portrait/portrait.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <input type="text" name="portrait" style="display:none;" value="{{imgSrc}}" />
+    <image class="icon" mode="widthFix" src="{{imgSrc}}"></image>
+    <button bindtap="choose"> 选择头像 </button>
+    <button formType="submit" bindtap="save"> 保存 </button>
+  </form>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/change/change.wxml-->
+
+  <view class="container">
+  <form bindsubmit="formSubmit" class="myform">
+    <view class="row">
+      <image mode="widthFix" class="icon" src="../../assets/img/suo.png"></image>
+      <input  password placeholder="确认旧密码" name="oldpwd"/>
+    </view>
+    <view class="row">
+      <image mode="widthFix" class="icon" src="../../assets/img/suo.png"></image>
+      <input  password placeholder="设置新密码" name="newpwd" />
+    </view>
+    <view class="row" style="border-bottom: 5px solid #EBEFED;;">
+    <image mode="widthFix" class="icon" src="../../assets/img/yaoshi.png"></image>
+    <input  password placeholder="确定新密码" name="surepwd"/>
+    </view>
+      <button formType="submit"> 确定 </button>
+    </form>
+  </view>
+

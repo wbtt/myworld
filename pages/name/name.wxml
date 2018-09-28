@@ -1,0 +1,16 @@
+<!--pages/name/name.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit" bindreset="formReset" class="myform">
+    
+
+    <view class="section">
+       <image mode="widthFix" class="icon" src="../../assets/img/name.png"></image>
+      <input name="nickname" value="{{nickname}}" class="name" placeholder="修改昵称" />
+    </view>
+   
+    
+    <view class="btn-area">
+      <button formType="submit">保存提交</button>
+    </view>
+  </form>
+</view>
